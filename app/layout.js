@@ -1,5 +1,17 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import "./css/style.css"
+import "./css/style.scss"
+import "./css/animate.css"
+import "./css/nice-select.css"
+import "./css/swiper-bundle.min.css"
+
+import "./css/bootstrap-icons.min.css"
+import "./css/bootstrap.min.css"
+
+import "./css/daterangepicker.css"
+import "./css/dropzone.css"
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,7 +32,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body style={{textDecoration:"none"}} className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>
