@@ -1,7 +1,8 @@
 import Image from "next/image";
 import  "bootstrap/dist/css/bootstrap.min.css"
-import { iAccordionImage, iAuthor, iCountryImage, iCountryImage2, iCountryImage3, iCountryImage4, iCountryImage5, iCountryImage6, iCountryImage7, iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4, iFlag, iFlag2, iFlag3, iFlag4, iFlag5, iFlag6, iFlag7, iFlag8, iGlobalIcon, iGoogleIcon, iLogo, iPaymentIcon, iPaymentIcon2, iPaymentIcon3, iPaymentIcon4, iPaymentIcon5, iPaymentIcon6, iPaymentIcon7, iPaymentIcon8, iPaymentIcon9, iVisaSection } from "@/util/imageImports";
-
+import { iAccordionImage, iAuthor, iCountryImage, iCountryImage2, iCountryImage3, iCountryImage4, iCountryImage5, iCountryImage6, iCountryImage7, iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4, iFlag, iFlag2, iFlag3, iFlag4, iFlag5, iFlag6, iFlag7, iFlag8, iGlobalIcon, iGoogleIcon, iLogo, iOfferBannerCard, iOfferBannerCard2, iPaymentIcon, iPaymentIcon2, iPaymentIcon3, iPaymentIcon4, iPaymentIcon5, iPaymentIcon6, iPaymentIcon7, iPaymentIcon8, iPaymentIcon9, iVisaSection } from "@/util/imageImports";
+import "../app/css/style.css"
+import OfferBannerSlider from "./components/OfferBannerSlider";
 export default function Home() {
 
     const backgroundImageStyle = {
@@ -79,7 +80,6 @@ export default function Home() {
                 </div>
                 <div className="swiper-slide">
                     <div className="home1-banner-wrapper"
-
                         >
                         <div className="container">
                             <div className="row">
@@ -1033,57 +1033,16 @@ export default function Home() {
     </div>
     {/* <!-- Destination section ends here --> */}
     {/* <!-- Offer section strats here --> */}
-    <div className="offer-section mb-90">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="offer-banner-title">
+    <div class="offer-section mb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="offer-banner-title">
                         <h2>Exclusive Offers</h2>
                     </div>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-lg-12 mb-60 position-relative">
-                    <div className="swiper offer-banner-slider">
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <div className="offer-card">
-                                    <img src="assets/image/offer-banner-card-image.png" alt=""/>
-                                    <div className="offer-card-content">
-                                        <span>Best Deal 20% Off</span>
-                                        <h2>Tourist Visa</h2>
-                                        <h6>Discover Great Deal</h6>
-                                        <a href="#" className="primary-btn1">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="offer-card">
-                                    <img src="assets/image/offer-banner-card-image2.png" alt=""/>
-                                    <div className="offer-card-content style-2">
-                                        <span>Best Deal 20% Off</span>
-                                        <h2>20% Off</h2>
-                                        <h6>Discover Great Deal</h6>
-                                        <a href="#" className="primary-btn1 style-2">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="offer-card">
-                                    <img src="assets/image/offer-banner-card-image2.png" alt=""/>
-                                    <div className="offer-card-content style-2">
-                                        <span>Best Deal 20% Off</span>
-                                        <h2>20% Off</h2>
-                                        <h6>Discover Great Deal</h6>
-                                        <a href="#" className="primary-btn1 style-2">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="swiper-pagination1"></div>
-                </div>
-            </div>
+            <OfferBannerSlider/>
         </div>
     </div>
     {/* <!-- Offer section ends here --> */}
@@ -1600,7 +1559,7 @@ export default function Home() {
     {/* <!-- Visa section ends here --> */}
 
     {/* <!-- provide visa section strats here --> */}
-    <div className="provide-visa-section mb-90">
+    {/* <div className="provide-visa-section mb-90">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12 mb-30">
@@ -1764,7 +1723,8 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
+
     {/* <!-- provide visa section ends here --> */}
     {/* <!-- Testimonial section strats here --> */}
     <div className="testimonial-section mb-90">
