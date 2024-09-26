@@ -59,5 +59,23 @@ export { default as iAuthor} from "@/app/image/author-image.png";
 
 
 
+//about us
+export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+export { default as iAboutImg} from "@/app/image/about-us/about-img.png";
+export { default as iMissionSection} from "@/app/image/about-us/our-misson-section-image.png";
+export { default as iMissionCardIcon} from "@/app/image/about-us/icon/mission-card-icon.svg";
+export { default as iMissionCardIcon2} from "@/app/image/about-us/icon/mission-card-icon2.svg";
+export { default as iMissionCardIcon3} from "@/app/image/about-us/icon/mission-card-icon3.svg";
+// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+
+
+
+
 
                                                                                                    

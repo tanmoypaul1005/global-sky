@@ -1,4 +1,4 @@
-import { iLogo2 } from '@/util/imageImports'
+import { iAboutImg, iCustomerImgGrp, iLogo2, iMissionCardIcon, iMissionCardIcon2, iMissionCardIcon3, iMissionSection } from '@/util/imageImports'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -82,7 +82,7 @@ const About = () => {
                                     Integer female go tellus ligula, attendora and condimentum.</p>
                                 <div className="counter-area">
                                     <div className="customer-image">
-                                        <img src="assets/image/about-us/customer-img-grp.png" alt="" />
+                                        <Image src={iCustomerImgGrp} alt="" />
                                     </div>
                                     <div className="content">
                                         <div className="number">
@@ -96,7 +96,7 @@ const About = () => {
                         </div>
                         <div className="col-lg-6">
                             <div className="about-img">
-                                <img src="assets/image/about-us/about-img.png" alt="" />
+                                <Image src={iAboutImg} alt="" />
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ const About = () => {
                     <div className="row gy-4">
                         <div className="col-lg-6">
                             <div className="our-mission-section-image">
-                                <img src="assets/image/about-us/our-misson-section-image.png" alt="" />
+                                <Image src={iMissionSection} alt="" />
                             </div>
                         </div>
                         <div className="col-lg-6 d-flex align-items-center">
@@ -123,7 +123,7 @@ const About = () => {
                                 <ul>
                                     <li>
                                         <div className="icon">
-                                            <img src="assets/image/about-us/icon/mission-card-icon.svg" alt="" />
+                                            <Image src={iMissionCardIcon} alt="" />
                                         </div>
                                         <div className="content">
                                             <h5>Visa Processing Insure</h5>
@@ -133,7 +133,7 @@ const About = () => {
                                     </li>
                                     <li>
                                         <div className="icon">
-                                            <img src="assets/image/about-us/icon/mission-card-icon2.svg" alt="" />
+                                            <Image src={iMissionCardIcon2} alt="" />
                                         </div>
                                         <div className="content">
                                             <h5>Travel Any Where</h5>
@@ -143,7 +143,7 @@ const About = () => {
                                     </li>
                                     <li>
                                         <div className="icon">
-                                            <img src="assets/image/about-us/icon/mission-card-icon3.svg" alt="" />
+                                            <Image src={iMissionCardIcon3} alt="" />
                                         </div>
                                         <div className="content">
                                             <h5>Travel Insurance Insure</h5>
