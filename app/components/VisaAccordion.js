@@ -84,7 +84,13 @@ const VisaAccordion = () => {
                                                 question={item?.question}
                                                 answer={item?.answer}
                                                 isExpanded={selectIndex === index}
-                                                onSlide={() => setSelectIndex(index)}
+                                                onSlide={() => {
+                                                    if(selectIndex === index){
+                                                        setSelectIndex(null)
+                                                        return
+                                                    }   
+                                                    setSelectIndex(index)
+                                                }}
                                             />
                                         })
                                     }
