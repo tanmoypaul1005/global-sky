@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 import CommonHeader from '../components/header/CommonHeader'
+import { iAttraction1, iAttraction2, iAttraction3, iAttraction4, iAttraction5 } from '@/util/imageImports'
+import Image from 'next/image'
 
 const Attraction = () => {
     return (
@@ -27,7 +29,7 @@ const Attraction = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
                                 <a href="#" className="attraction-card-img">
-                                    <img src="assets/image/attraction-01.png" alt="" />
+                                    <Image src={iAttraction1} alt="" />
                                     <div className="batch">
                                         <span>Popular</span>
                                     </div>
@@ -73,7 +75,7 @@ const Attraction = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
                                 <a href="#" className="attraction-card-img">
-                                    <img src="assets/image/attraction-02.png" alt="" />
+                                    <Image src={iAttraction2} alt="" />
                                 </a>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
@@ -116,7 +118,7 @@ const Attraction = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
                                 <a href="#" className="attraction-card-img">
-                                    <img src="assets/image/attraction-03.png" alt="" />
+                                    <Image src={iAttraction3} alt="" />
                                 </a>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
@@ -159,7 +161,7 @@ const Attraction = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
                                 <a href="#" className="attraction-card-img">
-                                    <img src="assets/image/attraction-04.png" alt="" />
+                                    <Image src={iAttraction4} alt="" />
                                 </a>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
@@ -202,7 +204,7 @@ const Attraction = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
                                 <a href="#" className="attraction-card-img">
-                                    <img src="assets/image/attraction-05.png" alt="" />
+                                    <Image src={iAttraction5} alt="" />
                                     <div className="batch">
                                         <span>Popular</span>
                                     </div>
@@ -248,7 +250,7 @@ const Attraction = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
                                 <a href="#" className="attraction-card-img">
-                                    <img src="assets/image/attraction-01.png" alt="" />
+                                    <Image src={iAttraction1} alt="" />
                                 </a>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">

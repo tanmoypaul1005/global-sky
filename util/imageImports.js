@@ -71,11 +71,13 @@ export { default as iFacilityCardIcon2} from "@/app/image/about-us/icon/facility
 export { default as iFacilityCardIcon3} from "@/app/image/about-us/icon/facility-card-icon3.svg";
 export { default as iFacilityCardIcon4} from "@/app/image/about-us/icon/facility-card-icon4.svg";
 export { default as iFacilitiesImage} from "@/app/image/about-us/facilities-image.jpg";
-// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
-// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
 
 
-
+export { default as iAttraction1} from "@/app/image/attraction-01.png";
+export { default as iAttraction2} from "@/app/image/attraction-02.png";
+export { default as iAttraction3} from "@/app/image/attraction-03.png";
+export { default as iAttraction4} from "@/app/image/attraction-04.png";
+export { default as iAttraction5} from "@/app/image/attraction-05.png";
 
 
                                                                                                    
