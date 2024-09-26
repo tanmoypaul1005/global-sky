@@ -18,7 +18,7 @@ const About = () => {
                         </div>
                         <ul className="menu-list">
                             <li>
-                                <a href="#">HOME</a>
+                                <Link href="/">HOME</Link>
                             </li>
                             <li className="menu-item-has-children"><a className="drop-down" href="#">Global Visa</a><i
                                 className="bi bi-plus dropdown-icon"></i>

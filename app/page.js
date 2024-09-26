@@ -17,11 +17,11 @@ export default function Home() {
     {/* <!-- hearder section strats here --> */}
     <header className="header-area header1">
         <div className="header-logo">
-            <a href="index.html"><Image alt="image"  classNameName="img-fluid" src={iLogo}/></a>
+            <Link href="/"><Image alt="image"  classNameName="img-fluid" src={iLogo}/></Link>
         </div>
         <div className="main-menu">
             <div className="mobile-menu-logo">
-                <a href="index.html"><Image alt="image" className="img-fluid" src={iLogo}/></a>
+                <Link href="/"><Image alt="image" className="img-fluid" src={iLogo}/></Link>
             </div>
             <ul className="menu-list">
                 <li>
