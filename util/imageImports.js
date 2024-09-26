@@ -1,4 +1,5 @@
 export { default as iLogo } from "@/app/image/global-sky-logo.svg";
+export { default as iLogo2 } from "@/app/image/about-us/global-sky-logo2.svg";
 export { default as iDestinationImage} from "@/app/image/destination-image.png";
 export { default as iDestinationImage2} from "@/app/image/destination-image2.png";
 export { default as iDestinationImage3} from "@/app/image/destination-image3.png";

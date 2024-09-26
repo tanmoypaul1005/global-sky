@@ -5,7 +5,6 @@ import "../app/css/style.css"
 import OfferBannerSlider from "./components/OfferBannerSlider";
 import ClientSpeak from "./components/ClientSpeak";
 import ProvideVisa from "./components/Providevisa";
-import Footer from "./components/Footer";
 export default function Home() {
 
     const backgroundImageStyle = {
@@ -1826,9 +1825,8 @@ export default function Home() {
     </div>
 
     {/* <!-- accordion section ends here --> */}
-    {/* <!-- Footer section strats here --> */}
-   <Footer />
-    {/* <!-- Footer section ends here --> */}
+
+
 
 </body>
   );
