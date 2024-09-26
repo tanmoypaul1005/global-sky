@@ -14,6 +14,7 @@ export default function Home() {
 
   return (
     <body className="backgraound-color">
+
     {/* <!-- hearder section strats here --> */}
     <header className="header-area header1">
         <div className="header-logo">
@@ -61,6 +62,7 @@ export default function Home() {
         </div>
     </header>
     {/* <!-- hearder section ends here --> */}
+
     {/* <!-- Banner section strats here --> */}
     <div className="home1-banner-area">
         <div className="swiper banner-section-swiper">
@@ -893,7 +895,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="row g-4">
-                <div className="col-lg-3 col-sm-6">
+                <Link href="/visa/1" className="col-lg-3 col-sm-6">
                     <div className="destination-card">
                         <div className="destination-image">
                             <Image src={iDestinationImage} alt=""/>
@@ -921,8 +923,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-3 col-sm-6">
+                </Link>
+                <Link href="/visa/1"  className="col-lg-3 col-sm-6">
                     <div className="destination-card">
                         <div className="destination-image">
                             <Image height={500} width={500} src={iDestinationImage2} alt=""/>
@@ -950,8 +952,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-3 col-sm-6">
+                </Link>
+                <Link href="/visa/1"  className="col-lg-3 col-sm-6">
                     <div className="destination-card">
                         <div className="destination-image">
                             <Image src={iDestinationImage3} alt=""/>
@@ -979,8 +981,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-3 col-sm-6">
+                </Link>
+                <Link href="/visa/1"  className="col-lg-3 col-sm-6">
                     <div className="destination-card">
                         <div className="destination-image">
                             <Image src={iDestinationImage4} alt=""/>
@@ -1025,7 +1027,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     </div>
