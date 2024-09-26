@@ -13,15 +13,19 @@ SwiperCore.use([Navigation, Pagination]);
 
 const OfferBannerSlider = () => {
     return (
-        <div  className="row ">
-            <div 
-            
-            className="col-lg-12 mb-60 position-relative">
+        <div className="row">
+            <div className="col-lg-12 mb-60 position-relative">
                 <Swiper
                     slidesPerView={2}
                     spaceBetween={30}
-                    navigation
-                    pagination={{ clickable: true }}
+                    navigation={{
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }}
+                    pagination={{
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    }}
                     className="swiper offer-banner-slider"
                 >
                     <SwiperSlide className="custom-swiper-slide">
@@ -52,13 +56,14 @@ const OfferBannerSlider = () => {
                             <div className="offer-card-content style-2">
                                 <span>Best Deal 20% Off</span>
                                 <h2>20% Off</h2>
-                                <h6>Discover Great Deal</h6>
                                 <a href="#" className="primary-btn1 style-2">View Details</a>
                             </div>
                         </div>
                     </SwiperSlide>
                 </Swiper>
-                {/* <div className="swiper-pagination1"></div> */}
+                {/* Swiper Navigation buttons */}
+                <div className="swiper-button-prev"></div>
+                <div className="swiper-button-next"></div>
             </div>
         </div>
     );

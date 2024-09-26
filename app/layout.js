@@ -1,6 +1,5 @@
-import localFont from "next/font/local";
-import "./globals.css";
 
+import "./globals.css";
 import "./css/style.css"
 import "./css/style.scss"
 import "./css/animate.css"
