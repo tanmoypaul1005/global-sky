@@ -66,11 +66,11 @@ export { default as iMissionSection} from "@/app/image/about-us/our-misson-secti
 export { default as iMissionCardIcon} from "@/app/image/about-us/icon/mission-card-icon.svg";
 export { default as iMissionCardIcon2} from "@/app/image/about-us/icon/mission-card-icon2.svg";
 export { default as iMissionCardIcon3} from "@/app/image/about-us/icon/mission-card-icon3.svg";
-// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
-// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
-// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
-// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
-// export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
+export { default as iFacilityCardIcon} from "@/app/image/about-us/icon/facility-card-icon.svg";
+export { default as iFacilityCardIcon2} from "@/app/image/about-us/icon/facility-card-icon2.svg";
+export { default as iFacilityCardIcon3} from "@/app/image/about-us/icon/facility-card-icon3.svg";
+export { default as iFacilityCardIcon4} from "@/app/image/about-us/icon/facility-card-icon4.svg";
+export { default as iFacilitiesImage} from "@/app/image/about-us/facilities-image.jpg";
 // export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
 // export { default as iCustomerImgGrp} from "@/app/image/about-us/customer-img-grp.png";
 
