@@ -3,13 +3,14 @@ import React from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination,Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import {iProvideVisa, iProvideVisa2, iProvideVisa3, iProvideVisa4, iProvideVisa5 } from '@/util/imageImports';
+import Demo from './Demo';
 
 // Install Swiper modules
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination,Autoplay]);
 
 const ProvideVisa = () => {
     return (
@@ -40,7 +41,8 @@ const ProvideVisa = () => {
                                 </svg>
                             </div>
                         </div>
-                        <Swiper
+                        <Demo/>
+                        {/* <Swiper
                             slidesPerView={3}
                             spaceBetween={30}
                             navigation={{
@@ -68,6 +70,10 @@ const ProvideVisa = () => {
                                     spaceBetween: 30
                                 }
                             }}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                              }}
                             className="swiper provide-visa-swiper"
                         >
                             <SwiperSlide>
@@ -200,7 +206,7 @@ const ProvideVisa = () => {
                                     </div>
                                 </div>
                             </SwiperSlide>
-                        </Swiper>
+                        </Swiper> */}
                         <div className="swiper-pagination"></div>
                     </div>
                 </div>

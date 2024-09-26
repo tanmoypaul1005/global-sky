@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { iCountryImage, iCountryImage2, iCountryImage3, iCountryImage4, iCountryImage5, iCountryImage6, iCountryImage7, iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4, iFlag, iFlag2, iFlag3, iFlag4, iFlag5, iFlag6, iFlag7, iFlag8, iLogo, iVisaSection } from "@/util/imageImports";
@@ -7,6 +8,7 @@ import ProvideVisa from "./components/Providevisa";
 import Link from "next/link";
 import Service from "./components/service/Service";
 import VisaAccordion from "./components/VisaAccordion";
+import Demo from "./components/Demo";
 export default function Home() {
 
     const backgroundImageStyle = {
@@ -295,7 +297,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="row gy-4">
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <Link href="/visa/1" className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="country-section-card">
                                 <div className="country-flip-box-layer country-flip-box-front">
                                     <div className="country-image">
@@ -348,8 +350,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        </Link>
+                        <Link href="/visa/1" className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="country-section-card">
                                 <div className="country-flip-box-layer country-flip-box-front">
                                     <div className="country-image">
@@ -402,8 +404,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        </Link>
+                        <Link href="/visa/1" className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="country-section-card">
                                 <div className="country-flip-box-layer country-flip-box-front">
                                     <div className="country-image">
@@ -456,8 +458,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        </Link>
+                        <Link href="/visa/1" className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="country-section-card">
                                 <div className="country-flip-box-layer country-flip-box-front">
                                     <div className="country-image">
@@ -510,8 +512,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        </Link>
+                        <Link href="/visa/1" className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="country-section-card">
                                 <div className="country-flip-box-layer country-flip-box-front">
                                     <div className="country-image">
@@ -564,8 +566,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        </Link>
+                        <Link href="/visa/1" className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="country-section-card">
                                 <div className="country-flip-box-layer country-flip-box-front">
                                     <div className="country-image">
@@ -618,8 +620,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        </Link>
+                        <Link href="/visa/1" className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="country-section-card">
                                 <div className="country-flip-box-layer country-flip-box-front">
                                     <div className="country-image">
@@ -672,8 +674,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        </Link>
+                        <Link href="/visa/1" className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div className="country-section-card">
                                 <div className="country-flip-box-layer country-flip-box-front">
                                     <div className="country-image">
@@ -726,11 +728,13 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
             {/* <!-- Country section ends here --> */}
+
+
             {/* <!-- Visa section strats here --> */}
             <div className="visa-section mb-90">
                 <div className="container">
