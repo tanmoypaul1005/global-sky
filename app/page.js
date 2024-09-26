@@ -36,7 +36,7 @@ export default function Home() {
                         <li><Link  href="/">Global Visa3</Link></li>
                     </ul>
                 </li>
-                <li><Link  href="/">UAE Attraction</Link></li>
+                <li><Link  href="/attraction">UAE Attraction</Link></li>
                 <li><Link  href="/">holiday package</Link></li>
                 <li><Link href="/">Travel insurance</Link></li>
                 <li>
