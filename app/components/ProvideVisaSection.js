@@ -8,7 +8,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { iProvideVisa, iProvideVisa2, iProvideVisa3, iProvideVisa4, iProvideVisa5 } from '@/util/imageImports';
 import Image from 'next/image';
 
-SwiperCore.use([Navigation, Pagination]);
+// Install Swiper modules
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const ProvideVisaSection = () => {
   return (
@@ -49,12 +50,18 @@ const ProvideVisaSection = () => {
                 prevEl: '.prev-3',
               }}
               pagination={{ clickable: true }}
+              autoplay={{
+                delay: 3000, // Delay between slides (in ms)
+                disableOnInteraction: false, // Keep autoplay running after user interaction
+              }}
+              loop={true} // Enable infinite looping
+              modules={[Autoplay]} // Include the Autoplay module
               className="provide-visa-swiper"
             >
               <SwiperSlide>
                 <div className="provide-visa-card">
                   <div className="provide-image">
-                    <Image  src={iProvideVisa} alt="" />
+                    <Image src={iProvideVisa} alt="" />
                   </div>
                   <div className="provide-content">
                     <div className="content-title">
@@ -67,8 +74,7 @@ const ProvideVisaSection = () => {
               <SwiperSlide>
                 <div className="provide-visa-card">
                   <div className="provide-image">
-                  <Image  src={iProvideVisa2} alt="" />
-                    {/* <img src="assets/image/provide-visa-image2.png" alt="" /> */}
+                    <Image src={iProvideVisa2} alt="" />
                   </div>
                   <div className="provide-content">
                     <div className="content-title">
@@ -81,7 +87,7 @@ const ProvideVisaSection = () => {
               <SwiperSlide>
                 <div className="provide-visa-card">
                   <div className="provide-image">
-                  <Image  src={iProvideVisa3} alt="" />
+                    <Image src={iProvideVisa3} alt="" />
                     {/* <img src="assets/image/provide-visa-image3.png" alt="" /> */}
                   </div>
                   <div className="provide-content">
@@ -95,8 +101,7 @@ const ProvideVisaSection = () => {
               <SwiperSlide>
                 <div className="provide-visa-card">
                   <div className="provide-image">
-                  <Image  src={iProvideVisa4} alt="" />
-                    {/* <img src="assets/image/provide-visa-image4.png" alt="" /> */}
+                    <Image src={iProvideVisa4} alt="" />
                   </div>
                   <div className="provide-content">
                     <div className="content-title">
@@ -109,8 +114,7 @@ const ProvideVisaSection = () => {
               <SwiperSlide>
                 <div className="provide-visa-card">
                   <div className="provide-image">
-                  <Image  src={iProvideVisa5} alt="" />
-                    {/* <img src="assets/image/provide-visa-image5.png" alt="" /> */}
+                    <Image src={iProvideVisa5} alt="" />
                   </div>
                   <div className="provide-content">
                     <div className="content-title">
@@ -120,7 +124,6 @@ const ProvideVisaSection = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              {/* Add more SwiperSlide components as needed */}
             </Swiper>
           </div>
         </div>
