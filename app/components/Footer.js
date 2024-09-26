@@ -1,3 +1,4 @@
+"use client"
 import { iLogo, iPaymentIcon, iPaymentIcon2, iPaymentIcon3, iPaymentIcon4, iPaymentIcon5, iPaymentIcon6, iPaymentIcon8, iPaymentIcon9 } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'

@@ -1,58 +1,14 @@
-import { iAboutImg, iCustomerImgGrp, iLogo2, iMissionCardIcon, iMissionCardIcon2, iMissionCardIcon3, iMissionSection } from '@/util/imageImports'
+import { iAboutImg, iCustomerImgGrp, iFacilitiesImage, iFacilityCardIcon, iFacilityCardIcon2, iFacilityCardIcon3, iFacilityCardIcon4, iLogo2, iMissionCardIcon, iMissionCardIcon2, iMissionCardIcon3, iMissionSection } from '@/util/imageImports'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import CommonHeader from '../components/header/CommonHeader'
 
 const About = () => {
     return (
         <body className="backgraound-color">
             {/* <!-- hearder section strats here --> */}
-            <header className="about-us">
-                <div className="header-wrapper">
-                    <div className="header-logo">
-                        <Link href="/"><Image alt="image" className="img-fluid" src={iLogo2} /></Link>
-                    </div>
-                    <div className="main-menu">
-                        <div className="mobile-menu-logo">
-                        <Link href="/"><Image alt="image" className="img-fluid" src={iLogo2} /></Link>
-                        </div>
-                        <ul className="menu-list">
-                            <li>
-                                <a href="#">HOME</a>
-                            </li>
-                            <li className="menu-item-has-children"><a className="drop-down" href="#">Global Visa</a><i
-                                className="bi bi-plus dropdown-icon"></i>
-                                <ul className="sub-menu">
-                                    <li><a href="#">Services-01</a></li>
-                                    <li><a href="#">Services-02</a></li>
-                                    <li><a href="#">Service Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">UAE Attraction</a></li>
-                            <li><a href="#">holiday package</a></li>
-                            <li>
-                                <a href="#">Travel insurance</a>
-                            </li>
-                            <li><a href="#">About Us</a></li>
-                        </ul>
-                        <div className="d-xl-none d-block">
-                            <a className="primary-btn2" href="#">
-                                Consultancy
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="nav-right">
-                    <div className="btn-area d-md-flex d-none">
-                        <a className="primary-btn2" href="#">
-                            Consultancy
-                        </a>
-                    </div>
-                    <div className="sidebar-button mobile-menu-btn ">
-                        <span></span>
-                    </div>
-                </div>
-            </header>
+            <CommonHeader/>
             {/* <!-- hearder section ends here --> */}
             {/* <!-- Banner section strats here --> */}
             <div className="about-breadcrum-section mb-120">
@@ -202,7 +158,7 @@ const About = () => {
                                     <div className="col-lg-6 col-md-6 ">
                                         <div className="facility-card">
                                             <div className="icon">
-                                                <img src="assets/image/about-us/icon/facility-card-icon.svg" alt="" />
+                                                <Image src={iFacilityCardIcon} alt="" />
                                             </div>
                                             <div className="content">
                                                 <h6>Safety first <br></br>always</h6>
@@ -212,7 +168,7 @@ const About = () => {
                                     <div className="col-lg-6 col-md-6 ">
                                         <div className="facility-card two">
                                             <div className="icon">
-                                                <img src="assets/image/about-us/icon/facility-card-icon2.svg" alt="" />
+                                                <Image src={iFacilityCardIcon2} alt="" />
                                             </div>
                                             <div className="content">
                                                 <h6>Trusted travel <br></br>guide</h6>
@@ -222,7 +178,7 @@ const About = () => {
                                     <div className="col-lg-6 col-md-6 ">
                                         <div className="facility-card two">
                                             <div className="icon">
-                                                <img src="assets/image/about-us/icon/facility-card-icon3.svg" alt="" />
+                                                <Image src={iFacilityCardIcon3} alt="" />
                                             </div>
                                             <div className="content">
                                                 <h6>Expertise and <br></br>Experience</h6>
@@ -232,7 +188,7 @@ const About = () => {
                                     <div className="col-lg-6 col-md-6 ">
                                         <div className="facility-card ">
                                             <div className="icon">
-                                                <img src="assets/image/about-us/icon/facility-card-icon4.svg" alt="" />
+                                                <Image src={iFacilityCardIcon4} alt="" />
                                             </div>
                                             <div className="content">
                                                 <h6>Time and Stress <br></br>Savings</h6>
@@ -244,7 +200,7 @@ const About = () => {
                         </div>
                         <div className="col-lg-6">
                             <div className="facilities-image">
-                                <img src="assets/image/about-us/facilities-image.jpg" alt="" />
+                                <Image src={iFacilitiesImage} alt="" />
                             </div>
                         </div>
                     </div>

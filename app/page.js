@@ -1,10 +1,11 @@
 import Image from "next/image";
 import  "bootstrap/dist/css/bootstrap.min.css"
-import { iAccordionImage, iAuthor, iCountryImage, iCountryImage2, iCountryImage3, iCountryImage4, iCountryImage5, iCountryImage6, iCountryImage7, iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4, iFlag, iFlag2, iFlag3, iFlag4, iFlag5, iFlag6, iFlag7, iFlag8, iGlobalIcon, iGoogleIcon, iLogo, iOfferBannerCard, iOfferBannerCard2, iPaymentIcon, iPaymentIcon2, iPaymentIcon3, iPaymentIcon4, iPaymentIcon5, iPaymentIcon6, iPaymentIcon7, iPaymentIcon8, iPaymentIcon9, iVisaSection } from "@/util/imageImports";
+import { iAccordionImage,iCountryImage, iCountryImage2, iCountryImage3, iCountryImage4, iCountryImage5, iCountryImage6, iCountryImage7, iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4, iFlag, iFlag2, iFlag3, iFlag4, iFlag5, iFlag6, iFlag7, iFlag8, iLogo, iVisaSection } from "@/util/imageImports";
 import "../app/css/style.css"
 import OfferBannerSlider from "./components/OfferBannerSlider";
 import ClientSpeak from "./components/ClientSpeak";
 import ProvideVisa from "./components/Providevisa";
+import Link from "next/link";
 export default function Home() {
 
     const backgroundImageStyle = {
@@ -13,14 +14,15 @@ export default function Home() {
 
   return (
     <body className="backgraound-color">
+
     {/* <!-- hearder section strats here --> */}
     <header className="header-area header1">
         <div className="header-logo">
-            <a href="index.html"><Image alt="image"  classNameName="img-fluid" src={iLogo}/></a>
+            <Link href="/"><Image alt="image"  classNameName="img-fluid" src={iLogo}/></Link>
         </div>
         <div className="main-menu">
             <div className="mobile-menu-logo">
-                <a href="index.html"><Image alt="image" className="img-fluid" src={iLogo}/></a>
+                <Link href="/"><Image alt="image" className="img-fluid" src={iLogo}/></Link>
             </div>
             <ul className="menu-list">
                 <li>
@@ -30,16 +32,16 @@ export default function Home() {
                     <a style={{textDecoration:"none"}} href="#">Global Visa</a>
                     <i className="bi bi-plus dropdown-icon"></i>
                     <ul className="sub-menu">
-                        <li><a style={{textDecoration:"none"}} href="#">Global Visa1</a></li>
-                        <li><a style={{textDecoration:"none"}} href="#">Global Visa2</a></li>
-                        <li><a style={{textDecoration:"none"}} href="#">Global Visa3</a></li>
+                        <li><Link  href="/">Global Visa1</Link></li>
+                        <li><Link  href="/">Global Visa2</Link></li>
+                        <li><Link  href="/">Global Visa3</Link></li>
                     </ul>
                 </li>
-                <li><a style={{textDecoration:"none"}} href="#">UAE Attraction</a></li>
-                <li><a style={{textDecoration:"none"}} href="#">holiday package</a></li>
-                <li><a style={{textDecoration:"none"}} href="#">Travel insurance</a></li>
+                <li><Link  href="/attraction">UAE Attraction</Link></li>
+                <li><Link  href="/">holiday package</Link></li>
+                <li><Link href="/">Travel insurance</Link></li>
                 <li>
-                    <a style={{textDecoration:"none"}} href="about-us.html" className="drop-down"> About Us</a>
+                    <Link href="/about" className="drop-down"> About Us</Link>
                 </li>
             </ul>
             <div className="d-xl-none d-block">
@@ -60,15 +62,14 @@ export default function Home() {
         </div>
     </header>
     {/* <!-- hearder section ends here --> */}
+
     {/* <!-- Banner section strats here --> */}
     <div className="home1-banner-area">
         <div className="swiper banner-section-swiper">
             <div className="swiper-wrapper">
                 <div className="swiper-slide">
                     <div className="home1-banner-wrapper"
-                    style={backgroundImageStyle}
-                        // style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assets/image/global-sky-banner.jpg);"
-                        >
+                    style={backgroundImageStyle}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12">
@@ -95,10 +96,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="swiper-slide">
-                    <div className="home1-banner-wrapper"
-                    style={backgroundImageStyle}
-                        // style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assets/image/global-sky-banner.jpg);"
-                        >
+                    <div className="home1-banner-wrapper" style={backgroundImageStyle}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12">
@@ -897,7 +895,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="row g-4">
-                <div className="col-lg-3 col-sm-6">
+                <Link href="/visa/1" className="col-lg-3 col-sm-6">
                     <div className="destination-card">
                         <div className="destination-image">
                             <Image src={iDestinationImage} alt=""/>
@@ -925,8 +923,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-3 col-sm-6">
+                </Link>
+                <Link href="/visa/1"  className="col-lg-3 col-sm-6">
                     <div className="destination-card">
                         <div className="destination-image">
                             <Image height={500} width={500} src={iDestinationImage2} alt=""/>
@@ -954,8 +952,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-3 col-sm-6">
+                </Link>
+                <Link href="/visa/1"  className="col-lg-3 col-sm-6">
                     <div className="destination-card">
                         <div className="destination-image">
                             <Image src={iDestinationImage3} alt=""/>
@@ -983,8 +981,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-3 col-sm-6">
+                </Link>
+                <Link href="/visa/1"  className="col-lg-3 col-sm-6">
                     <div className="destination-card">
                         <div className="destination-image">
                             <Image src={iDestinationImage4} alt=""/>
@@ -1029,7 +1027,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     </div>
