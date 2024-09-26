@@ -1,7 +1,6 @@
 import Image from "next/image";
 import  "bootstrap/dist/css/bootstrap.min.css"
 import { iAccordionImage,iCountryImage, iCountryImage2, iCountryImage3, iCountryImage4, iCountryImage5, iCountryImage6, iCountryImage7, iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4, iFlag, iFlag2, iFlag3, iFlag4, iFlag5, iFlag6, iFlag7, iFlag8, iLogo, iVisaSection } from "@/util/imageImports";
-import "../app/css/style.css"
 import OfferBannerSlider from "./components/OfferBannerSlider";
 import ClientSpeak from "./components/ClientSpeak";
 import ProvideVisa from "./components/Providevisa";
@@ -114,7 +113,7 @@ export default function Home() {
     </div>
 
     <Service/>
-    
+
     {/* <!-- Destination section ends here --> */}
     {/* <!-- Banner section ends here --> */}
     {/* <!-- Destination section strats here --> */}
