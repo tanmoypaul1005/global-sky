@@ -10,6 +10,7 @@ export { default as iOfferBannerCard} from "@/app/image/offer-banner-card-image.
 export { default as iOfferBannerCard2} from "@/app/image/offer-banner-card-image2.png";
 
 
+export { default as iFlagImage} from "@/app/image/flag.png";
 export { default as iFlag} from "@/app/image/flag-image.png";
 export { default as iFlag2} from "@/app/image/flag-image2.png";
 export { default as iFlag3} from "@/app/image/flag-image3.png";
