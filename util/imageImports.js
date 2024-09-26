@@ -80,5 +80,7 @@ export { default as iAttraction3} from "@/app/image/attraction-03.png";
 export { default as iAttraction4} from "@/app/image/attraction-04.png";
 export { default as iAttraction5} from "@/app/image/attraction-05.png";
 
+export { default as iVisaScreenshot} from "@/app/image/document-img.png";
+
 
                                                                                                    

@@ -1,5 +1,5 @@
 import CommonHeader from '@/app/components/header/CommonHeader'
-import { iFlagImage } from '@/util/imageImports'
+import { iFlagImage, iVisaScreenshot } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
 
@@ -597,8 +597,7 @@ const VisaDetails = () => {
                                                         <div className="col-md-6">
                                                             <div className="document-card">
                                                                 <div className="document-image">
-                                                                    <img className="popup-image" src="assets/image/document-img.png"
-                                                                        alt="" />
+                                                                    <Image className="popup-image" src={iVisaScreenshot} alt="" />
                                                                 </div>
                                                                 <div className="document-content">
                                                                     <h6>Thailand Immigration Stamped
@@ -609,8 +608,7 @@ const VisaDetails = () => {
                                                         <div className="col-md-6">
                                                             <div className="document-card">
                                                                 <div className="document-image">
-                                                                    <img className="popup-image" src="assets/image/document-img.png"
-                                                                        alt="" />
+                                                                    <Image className="popup-image" src={iVisaScreenshot} alt="" />
                                                                 </div>
                                                                 <div className="document-content">
                                                                     <h6>Thailand Immigration Stamped
@@ -621,8 +619,7 @@ const VisaDetails = () => {
                                                         <div className="col-md-6">
                                                             <div className="document-card">
                                                                 <div className="document-image">
-                                                                    <img className="popup-image" src="assets/image/document-img.png"
-                                                                        alt="" />
+                                                                <Image className="popup-image" src={iVisaScreenshot} alt="" />
                                                                 </div>
                                                                 <div className="document-content">
                                                                     <h6>Thailand Immigration Stamped
@@ -633,8 +630,7 @@ const VisaDetails = () => {
                                                         <div className="col-md-6">
                                                             <div className="document-card">
                                                                 <div className="document-image">
-                                                                    <img className="popup-image" src="assets/image/document-img.png"
-                                                                        alt="" />
+                                                                <Image className="popup-image" src={iVisaScreenshot} alt="" />
                                                                 </div>
                                                                 <div className="document-content">
                                                                     <h6>Thailand Immigration Stamped
@@ -645,8 +641,7 @@ const VisaDetails = () => {
                                                         <div className="col-md-6">
                                                             <div className="document-card">
                                                                 <div className="document-image">
-                                                                    <img className="popup-image" src="assets/image/document-img.png"
-                                                                        alt="" />
+                                                                <Image className="popup-image" src={iVisaScreenshot} alt="" />
                                                                 </div>
                                                                 <div className="document-content">
                                                                     <h6>Thailand Immigration Stamped
