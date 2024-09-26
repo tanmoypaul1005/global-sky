@@ -3673,7 +3673,11 @@ header.about-us .nav-right .mobile-menu-btn {
   line-height: 30px;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-left: -30px;
   color: var(--white-color);
+}
+.widget-list-icon{
+  margin-left: -30px;
 }
 .footer-section .footer-top .footer-widget .single-content {
   margin-bottom: 35px;
