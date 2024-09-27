@@ -73,11 +73,11 @@ const AttractionDetails = () => {
                         </div>
                     </div>
                     <div className="others-image-wrap d-none">
-                        <a href="assets/image/attraction-01.png" data-fancybox="images"><img src="assets/image/attraction-01.png" alt="" /></a>
-                        <a href="assets/image/attraction-02.png" data-fancybox="images"><img src="assets/image/attraction-02.png" alt="" /></a>
-                        <a href="assets/image/attraction-03.png" data-fancybox="images"><img src="assets/image/attraction-03.png" alt="" /></a>
-                        <a href="assets/image/attraction-04.png" data-fancybox="images"><img src="assets/image/attraction-04.png" alt="" /></a>
-                        <a href="assets/image/attraction-05.png" data-fancybox="images"><img src="assets/image/attraction-05.png" alt="" /></a>
+                        <a href="assets/image/attraction-01.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="assets/image/attraction-02.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="assets/image/attraction-03.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="assets/image/attraction-04.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="assets/image/attraction-05.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
                     </div>
                     <div className="row g-xl-4 gy-5">
                         <div className="col-xl-8">
@@ -653,7 +653,7 @@ const AttractionDetails = () => {
                                         aria-labelledby="v-pills-booking-tab">
                                         <div className="sidebar-booking-form">
                                             <form>
-                                                <div className="tour-date-wrap mb-50">
+                                                <div className="tour-date-wrap mt-50 mb-50">
                                                     <h6>Select Your Booking Date:</h6>
                                                     <div className="form-inner mb-20">
                                                         <div className="form-group">
