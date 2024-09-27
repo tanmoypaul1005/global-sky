@@ -5973,12 +5973,17 @@ header.about-us .nav-right .mobile-menu-btn {
 }
 .review-box .modal .modal-dialog .modal-content .modal-body .review-from-wrapper .star-rating-wrapper .star-rating-list li .rating-container {
   line-height: 1;
+  
 }
 .review-box .modal .modal-dialog .modal-content .modal-body .review-from-wrapper .star-rating-wrapper .star-rating-list li .rating-container i {
   color: var(--paragraph-color);
   font-size: 13px;
   cursor: pointer;
 }
+.margin-left30 {
+  margin-left: 30px !important;
+}
+
 .review-box .modal .modal-dialog .modal-content .modal-body .review-from-wrapper .star-rating-wrapper .star-rating-list li span {
   display: inline-block;
   font-size: 15px;
@@ -6271,6 +6276,7 @@ header.about-us .nav-right .mobile-menu-btn {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 15px;
+  margin-left: -30px;
 }
 .package-details-area .tour-info-metalist li {
   display: flex;
@@ -6315,6 +6321,7 @@ header.about-us .nav-right .mobile-menu-btn {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  margin-left: -30px;
 }
 @media (max-width: 576px) {
   .package-details-area .includ-and-exclud-area {

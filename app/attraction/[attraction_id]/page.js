@@ -1,12 +1,19 @@
+"use client"
 import CommonHeader from '@/app/components/header/CommonHeader'
+import { iAttraction1, iAttraction2, iAttraction3, iAttraction4, iAttraction5 } from '@/util/imageImports'
+import Image from 'next/image'
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JavaScript
+
 
 const AttractionDetails = () => {
     return (
         <body className="backgraound-color">
-            {/* <!-- hearder section strats here --> */}
+            
             <CommonHeader />
-            {/* <!-- hearder section ends here --> */}
+            
             {/* <!-- Banner section strats here --> */}
             <div className="about-breadcrum-section mb-120">
                 <div className="container">
@@ -28,7 +35,7 @@ const AttractionDetails = () => {
                                 <div className="row align-items-center g-3">
                                     <div className="col-lg-6">
                                         <div className="gallery-img-wrap">
-                                            <img src="assets/image/attraction-01.png" alt="" />
+                                            <Image src={iAttraction1} alt="" />
                                             <a data-fancybox="gallery-01" href="assets/image/attraction-01.png"><i
                                                 className="bi bi-eye"></i></a>
                                         </div>
@@ -37,27 +44,27 @@ const AttractionDetails = () => {
                                         <div className="row g-3 h-100">
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap">
-                                                    <img src="assets/image/attraction-02.png" alt="" />
+                                                    <Image src={iAttraction2} alt="" />
                                                     <a data-fancybox="gallery-01" href="assets/image/attraction-02.png"><i
                                                         className="bi bi-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap">
-                                                    <img src="assets/image/attraction-03.png" alt="" />
+                                                    <Image src={iAttraction3} alt="" />
                                                     <a data-fancybox="gallery-01" href="assets/image/attraction-03.png"><i
                                                         className="bi bi-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap active">
-                                                    <img src="assets/image/attraction-04.png" alt="" />
+                                                    <Image src={iAttraction4} alt="" />
                                                     <button className="StartSlideShowFirstImage"><i className="bi bi-plus-lg"></i> View More Images</button>
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap active">
-                                                    <img src="assets/image/attraction-05.png" alt="" />
+                                                    <Image src={iAttraction5} alt="" />
                                                     <a data-fancybox="gallery-01"
                                                         href="https://www.youtube.com/watch?v=u31qwQUeGuM"><i
                                                             className="bi bi-play-circle"></i> Watch Video</a>
@@ -70,11 +77,11 @@ const AttractionDetails = () => {
                         </div>
                     </div>
                     <div className="others-image-wrap d-none">
-                        <a href="assets/image/attraction-01.png" data-fancybox="images"><img src="assets/image/attraction-01.png" alt="" /></a>
-                        <a href="assets/image/attraction-02.png" data-fancybox="images"><img src="assets/image/attraction-02.png" alt="" /></a>
-                        <a href="assets/image/attraction-03.png" data-fancybox="images"><img src="assets/image/attraction-03.png" alt="" /></a>
-                        <a href="assets/image/attraction-04.png" data-fancybox="images"><img src="assets/image/attraction-04.png" alt="" /></a>
-                        <a href="assets/image/attraction-05.png" data-fancybox="images"><img src="assets/image/attraction-05.png" alt="" /></a>
+                        <a href="assets/image/attraction-01.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="assets/image/attraction-02.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="assets/image/attraction-03.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="assets/image/attraction-04.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="assets/image/attraction-05.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
                     </div>
                     <div className="row g-xl-4 gy-5">
                         <div className="col-xl-8">
@@ -112,7 +119,9 @@ const AttractionDetails = () => {
                             </div>
                             <div className="highlight-tour mb-20">
                                 <h4>Highlights of the Place</h4>
-                                <ul>
+                                <ul style={{
+                                    marginLeft: "-30px"
+                                }}>
                                     <li><span><i className="bi bi-check"></i></span> Immersion in breathtaking, untouched landscapes away from crowded ski resorts.</li>
                                     <li><span><i className="bi bi-check"></i></span> Combining endurance and skill while exploring diverse terrains.</li>
                                     <li><span><i className="bi bi-check"></i></span> Accessing pristine, less-traveled areas for a unique adventure.</li>
@@ -131,7 +140,9 @@ const AttractionDetails = () => {
                                     </h2>
                                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#tourPlan">
                                         <div className="accordion-body">
-                                            <ul>
+                                            <ul style={{
+                                    marginLeft: "-30px"
+                                }}>
                                                 <li><i className="bi bi-check-lg"></i> Passport or Emirates ID is mandatory to be carried.</li>
                                                 <li><i className="bi bi-check-lg"></i> <strong>Weight criteria :</strong> Guests weighing from 30 to 150 kgs will be allowed for the glass slide</li>
                                                 <li><i className="bi bi-check-lg"></i> <strong>Height criteria :</strong> Guests with height ranging from 120 cm to 200 cm will be allowed for the glass slide</li>
@@ -188,7 +199,9 @@ const AttractionDetails = () => {
                                     <div className="total-review">
                                         <h2>9.5</h2>
                                         <div className="review-wrap">
-                                            <ul className="star-list">
+                                            <ul style={{
+                                    marginLeft: "-30px"
+                                }} className="star-list">
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -234,7 +247,7 @@ const AttractionDetails = () => {
                                                                             <div className="star-rating-wrapper">
                                                                                 <ul className="star-rating-list">
                                                                                     <li>
-                                                                                        <div className="rating-container"
+                                                                                        <div className="rating-container "
                                                                                             data-rating="0">
                                                                                             <i
                                                                                                 className="bi bi-star-fill star-icon"></i>
@@ -250,7 +263,7 @@ const AttractionDetails = () => {
                                                                                         <span>Overall</span>
                                                                                     </li>
                                                                                     <li>
-                                                                                        <div className="rating-container"
+                                                                                        <div  className="rating-container"
                                                                                             data-rating="0">
                                                                                             <i
                                                                                                 className="bi bi-star-fill star-icon"></i>
@@ -326,8 +339,7 @@ const AttractionDetails = () => {
                                                         </div>
                                                         <div className="col-lg-4 d-lg-flex d-none">
                                                             <div className="modal-form-image">
-                                                                <img src="assets/image/attraction-01.png" alt="image"
-                                                                    className="img-fluid" />
+                                                                <Image src={iAttraction1} alt="image" className="img-fluid" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -343,7 +355,7 @@ const AttractionDetails = () => {
                                         <li>
                                             <div className="single-comment-area">
                                                 <div className="author-img">
-                                                    <img src="assets/image/attraction-01.png" alt="" />
+                                                    <Image src={iAttraction1} alt="" />
                                                 </div>
                                                 <div className="comment-content">
                                                     <div className="author-name-deg">
@@ -353,7 +365,9 @@ const AttractionDetails = () => {
                                                     <ul className="review-item-list">
                                                         <li>
                                                             <span>Overall</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list ">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -363,7 +377,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Transport</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }}className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -373,7 +389,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Food</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -383,7 +401,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Destination</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -393,7 +413,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Hospitality</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -419,7 +441,7 @@ const AttractionDetails = () => {
                                                 <li>
                                                     <div className="single-comment-area">
                                                         <div className="author-img">
-                                                            <img src="assets/image/attraction-01.png" alt="" />
+                                                            <Image src={iAttraction1} alt="" />
                                                         </div>
                                                         <div className="comment-content">
                                                             <div className="author-name-deg">
@@ -444,7 +466,7 @@ const AttractionDetails = () => {
                                         <li>
                                             <div className="single-comment-area">
                                                 <div className="author-img">
-                                                    <img src="assets/image/attraction-01.png" alt="" />
+                                                    <Image src={iAttraction1} alt="" />
                                                 </div>
                                                 <div className="comment-content">
                                                     <div className="author-name-deg">
@@ -454,7 +476,9 @@ const AttractionDetails = () => {
                                                     <ul className="review-item-list">
                                                         <li>
                                                             <span>Overall</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -464,7 +488,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Transport</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -474,7 +500,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Food</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -484,7 +512,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Destination</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -494,7 +524,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Hospitality</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -520,7 +552,7 @@ const AttractionDetails = () => {
                                         <li>
                                             <div className="single-comment-area">
                                                 <div className="author-img">
-                                                    <img src="assets/image/attraction-01.png" alt="" />
+                                                    <Image src={iAttraction1} alt="" />
                                                 </div>
                                                 <div className="comment-content">
                                                     <div className="author-name-deg">
@@ -530,7 +562,9 @@ const AttractionDetails = () => {
                                                     <ul className="review-item-list">
                                                         <li>
                                                             <span>Overall</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -540,7 +574,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Transport</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -550,7 +586,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Food</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -560,7 +598,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Destination</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -570,7 +610,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Hospitality</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -602,7 +644,7 @@ const AttractionDetails = () => {
                             <div className="booking-form-wrap mb-30">
                                 <h4>Reserve Your Activity</h4>
                                 <p>Secure your spot for an unforgettable nature adventure now!</p>
-                                <div className="nav nav-pills mb-40" role="tablist">
+                                <div className="nav nav-pills " role="tablist">
                                     <button className="nav-link show active" id="v-pills-booking-tab" data-bs-toggle="pill"
                                         data-bs-target="#v-pills-booking" type="button" role="tab"
                                         aria-controls="v-pills-booking" aria-selected="true">Online Booking</button>
@@ -615,7 +657,7 @@ const AttractionDetails = () => {
                                         aria-labelledby="v-pills-booking-tab">
                                         <div className="sidebar-booking-form">
                                             <form>
-                                                <div className="tour-date-wrap mb-50">
+                                                <div className="tour-date-wrap mt-50  mb-50">
                                                     <h6>Select Your Booking Date:</h6>
                                                     <div className="form-inner mb-20">
                                                         <div className="form-group">
