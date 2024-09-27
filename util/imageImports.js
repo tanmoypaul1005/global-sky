@@ -10,6 +10,7 @@ export { default as iOfferBannerCard} from "@/app/image/offer-banner-card-image.
 export { default as iOfferBannerCard2} from "@/app/image/offer-banner-card-image2.png";
 
 
+export { default as iFlagImage} from "@/app/image/flag.png";
 export { default as iFlag} from "@/app/image/flag-image.png";
 export { default as iFlag2} from "@/app/image/flag-image2.png";
 export { default as iFlag3} from "@/app/image/flag-image3.png";
@@ -78,6 +79,8 @@ export { default as iAttraction2} from "@/app/image/attraction-02.png";
 export { default as iAttraction3} from "@/app/image/attraction-03.png";
 export { default as iAttraction4} from "@/app/image/attraction-04.png";
 export { default as iAttraction5} from "@/app/image/attraction-05.png";
+
+export { default as iVisaScreenshot} from "@/app/image/document-img.png";
 
 
                                                                                                    

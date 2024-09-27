@@ -68,7 +68,6 @@ const ProvideVisaSection = () => {
                 <div className="provide-visa-card">
                   <div className="provide-image">
                   <Image  src={iProvideVisa2} alt="" />
-                    {/* <img src="assets/image/provide-visa-image2.png" alt="" /> */}
                   </div>
                   <div className="provide-content">
                     <div className="content-title">
@@ -96,7 +95,6 @@ const ProvideVisaSection = () => {
                 <div className="provide-visa-card">
                   <div className="provide-image">
                   <Image  src={iProvideVisa4} alt="" />
-                    {/* <img src="assets/image/provide-visa-image4.png" alt="" /> */}
                   </div>
                   <div className="provide-content">
                     <div className="content-title">
@@ -110,7 +108,6 @@ const ProvideVisaSection = () => {
                 <div className="provide-visa-card">
                   <div className="provide-image">
                   <Image  src={iProvideVisa5} alt="" />
-                    {/* <img src="assets/image/provide-visa-image5.png" alt="" /> */}
                   </div>
                   <div className="provide-content">
                     <div className="content-title">
@@ -120,7 +117,6 @@ const ProvideVisaSection = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              {/* Add more SwiperSlide components as needed */}
             </Swiper>
           </div>
         </div>

@@ -32,7 +32,7 @@ const CommonHeader = () => {
                             <li>
                                 <a href="#">Travel insurance</a>
                             </li>
-                            <li><a href="#">About Us</a></li>
+                            <li><Link href="/about">About Us</Link></li>
                         </ul>
                         <div className="d-xl-none d-block">
                             <a className="primary-btn2" href="#">

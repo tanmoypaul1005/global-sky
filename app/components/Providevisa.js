@@ -3,13 +3,14 @@ import React from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination,Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import {iProvideVisa, iProvideVisa2, iProvideVisa3, iProvideVisa4, iProvideVisa5 } from '@/util/imageImports';
+import Demo from './Demo';
 
 // Install Swiper modules
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination,Autoplay]);
 
 const ProvideVisa = () => {
     return (
@@ -26,7 +27,7 @@ const ProvideVisa = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-12 position-relative">
-                        <div className="slider-btn-groups3">
+                        {/* <div className="slider-btn-groups3">
                             <div className="slider-btn prev-3 swiper-button-prev">
                                 <svg width="21" height="12" viewBox="0 0 21 12" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -39,8 +40,9 @@ const ProvideVisa = () => {
                                         d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696699C15.4645 0.403806 14.9896 0.403806 14.6967 0.696699C14.4038 0.989593 14.4038 1.46447 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM1 6.75L20 6.75V5.25L1 5.25L1 6.75Z" />
                                 </svg>
                             </div>
-                        </div>
-                        <Swiper
+                        </div> */}
+                        <Demo/>
+                        {/* <Swiper
                             slidesPerView={3}
                             spaceBetween={30}
                             navigation={{
@@ -51,6 +53,27 @@ const ProvideVisa = () => {
                                 el: '.swiper-pagination',
                                 clickable: true,
                             }}
+                            breakpoints={{
+                                // when window width is >= 320px
+                                320: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10
+                                },
+                                // when window width is >= 640px
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20
+                                },
+                                // when window width is >= 1024px
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 30
+                                }
+                            }}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                              }}
                             className="swiper provide-visa-swiper"
                         >
                             <SwiperSlide>
@@ -183,8 +206,8 @@ const ProvideVisa = () => {
                                     </div>
                                 </div>
                             </SwiperSlide>
-                        </Swiper>
-                        <div className="swiper-pagination"></div>
+                        </Swiper> */}
+                        {/* <div className="swiper-pagination"></div> */}
                     </div>
                 </div>
             </div>

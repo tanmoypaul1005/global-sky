@@ -11,6 +11,7 @@ import "./css/daterangepicker.css"
 import "./css/dropzone.css"
 import "./css/jquery.fancybox.min.css"
 import Footer from "./components/Footer";
+import  "bootstrap/dist/css/bootstrap.min.css"
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -38,3 +39,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+

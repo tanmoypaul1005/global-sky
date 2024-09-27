@@ -4,3 +4,32 @@ a {
 }
 
 
+
+
+/* .swiper-pagination-bullet {
+  z-index: 1000 !important;
+  margin-top: 120px !important;
+  background-color: #000 !important;
+} */
+
+
+/* .swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: blue !;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  margin-top:"200px" !important;
+  background-color: red !important;
+  opacity: 1;
+} */

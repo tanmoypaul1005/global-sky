@@ -1,16 +1,13 @@
-import Link from 'next/link'
 import React from 'react'
 import CommonHeader from '../components/header/CommonHeader'
 import { iAttraction1, iAttraction2, iAttraction3, iAttraction4, iAttraction5 } from '@/util/imageImports'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Attraction = () => {
     return (
         <body className="backgraound-color">
-            {/* <!-- hearder section strats here --> */}
             <CommonHeader />
-            {/* <!-- hearder section ends here --> */}
-            {/* <!-- Banner section strats here --> */}
             <div className="about-breadcrum-section mb-120">
                 <div className="container">
                     <div className="row">
@@ -26,14 +23,15 @@ const Attraction = () => {
             <div className="attraction-section mb-120">
                 <div className="container">
                     <div className="row g-4">
+
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
-                                <a href="#" className="attraction-card-img">
+                                <Link href="/attraction/1" className="attraction-card-img">
                                     <Image src={iAttraction1} alt="" />
                                     <div className="batch">
                                         <span>Popular</span>
                                     </div>
-                                </a>
+                                </Link>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
                                         <div className="rating-area">
@@ -46,7 +44,7 @@ const Attraction = () => {
                                             </ul>
                                             <span>(28 Review)</span>
                                         </div>
-                                        <h5><a href="#">Sky Views Observatory</a></h5>
+                                        <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
                                             <li>
                                                 <svg className="with-stroke" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -72,11 +70,12 @@ const Attraction = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
-                                <a href="#" className="attraction-card-img">
+                                <Link href="/attraction/1" className="attraction-card-img">
                                     <Image src={iAttraction2} alt="" />
-                                </a>
+                                </Link>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
                                         <div className="rating-area">
@@ -89,7 +88,7 @@ const Attraction = () => {
                                             </ul>
                                             <span>(28 Review)</span>
                                         </div>
-                                        <h5><a href="#">Sky Views Observatory</a></h5>
+                                        <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
                                             <li>
                                                 <svg className="with-stroke" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -115,11 +114,12 @@ const Attraction = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
-                                <a href="#" className="attraction-card-img">
+                                <Link href="/attraction/1" className="attraction-card-img">
                                     <Image src={iAttraction3} alt="" />
-                                </a>
+                                </Link>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
                                         <div className="rating-area">
@@ -132,7 +132,7 @@ const Attraction = () => {
                                             </ul>
                                             <span>(28 Review)</span>
                                         </div>
-                                        <h5><a href="#">Sky Views Observatory</a></h5>
+                                        <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
                                             <li>
                                                 <svg className="with-stroke" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -158,11 +158,12 @@ const Attraction = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
-                                <a href="#" className="attraction-card-img">
+                                <Link href="/attraction/1" className="attraction-card-img">
                                     <Image src={iAttraction4} alt="" />
-                                </a>
+                                </Link>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
                                         <div className="rating-area">
@@ -175,7 +176,7 @@ const Attraction = () => {
                                             </ul>
                                             <span>(28 Review)</span>
                                         </div>
-                                        <h5><a href="#">Sky Views Observatory</a></h5>
+                                        <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
                                             <li>
                                                 <svg className="with-stroke" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -201,14 +202,15 @@ const Attraction = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
-                                <a href="#" className="attraction-card-img">
+                                <Link href="/attraction/1" className="attraction-card-img">
                                     <Image src={iAttraction5} alt="" />
                                     <div className="batch">
                                         <span>Popular</span>
                                     </div>
-                                </a>
+                                </Link>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
                                         <div className="rating-area">
@@ -221,7 +223,7 @@ const Attraction = () => {
                                             </ul>
                                             <span>(28 Review)</span>
                                         </div>
-                                        <h5><a href="#">Sky Views Observatory</a></h5>
+                                        <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
                                             <li>
                                                 <svg className="with-stroke" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -247,11 +249,12 @@ const Attraction = () => {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-lg-4 col-md-6">
                             <div className="attraction-card">
-                                <a href="#" className="attraction-card-img">
+                                <Link href="/attraction/1" className="attraction-card-img">
                                     <Image src={iAttraction1} alt="" />
-                                </a>
+                                </Link>
                                 <div className="attraction-card-content">
                                     <div className="card-content-top">
                                         <div className="rating-area">
@@ -264,7 +267,7 @@ const Attraction = () => {
                                             </ul>
                                             <span>(28 Review)</span>
                                         </div>
-                                        <h5><a href="#">Sky Views Observatory</a></h5>
+                                        <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
                                             <li>
                                                 <svg className="with-stroke" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -290,6 +293,7 @@ const Attraction = () => {
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
