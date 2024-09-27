@@ -21,23 +21,23 @@ const ClientSpeakSlider = () => {
                     delay: 2500,
                     disableOnInteraction: false,
                 }}
-                // breakpoints={{
-                //     // when window width is >= 320px
-                //     320: {
-                //         slidesPerView: 1,
-                //         spaceBetween: 10
-                //     },
-                //     // when window width is >= 640px
-                //     640: {
-                //         slidesPerView: 2,
-                //         spaceBetween: 20
-                //     },
-                //     // when window width is >= 1024px
-                //     1024: {
-                //         slidesPerView: 2,
-                //         spaceBetween: 30
-                //     }
-                // }}
+                breakpoints={{
+                    // when window width is >= 320px
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    // when window width is >= 1024px
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    }
+                }}
                 // navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
