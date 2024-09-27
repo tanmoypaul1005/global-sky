@@ -279,7 +279,11 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <OfferBannerSlider />
+                    <div className="row">
+                        <div className="col-lg-12 mb-60 position-relative">
+                            <OfferBannerSlider />
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* <!-- Offer section ends here --> */}
@@ -795,12 +799,12 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-           
+
             <ProvideVisa />
 
             <ClientSpeak />
 
-            <VisaAccordion/>
+            <VisaAccordion />
         </body>
     );
 }

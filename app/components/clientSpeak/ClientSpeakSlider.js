@@ -14,9 +14,9 @@ const ClientSpeakSlider = () => {
     return (
         <>
             <Swiper
-                slidesPerView={`auto`}
+                slidesPerView={2}
                 spaceBetween={30}
-                centeredSlides={true}
+                // centeredSlides={true}
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
