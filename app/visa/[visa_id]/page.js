@@ -1,9 +1,13 @@
+"use client"
+import React, { useState } from 'react'
 import CommonHeader from '@/app/components/header/CommonHeader'
 import { iFlagImage, iVisaScreenshot } from '@/util/imageImports'
 import Image from 'next/image'
-import React from 'react'
 
 const VisaDetails = () => {
+
+    const [currentStep, setCurrentStep] = useState("details");
+
     return (
         <body className="backgraound-color">
             <CommonHeader />
@@ -22,7 +26,7 @@ const VisaDetails = () => {
                 </div>
             </div>
             {/* <!-- Banner section ends here -->
-    <!-- Modal --> */}
+            <!-- Modal --> */}
             <div className="modal fade visa-apply-modal" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
                 <div className="modal-dialog  modal-dialog-centered">
@@ -307,18 +311,18 @@ const VisaDetails = () => {
                         <div className="col-lg-8">
                             <div className="visa-details-tab">
                                 <ul className="nav nav-tabs" id="visaTab" role="tablist">
-                                    <li className="nav-item" role="presentation">
-                                        <button className="nav-link active" id="details-tab" data-bs-toggle="tab"
+                                    <li onClick={() => { setCurrentStep("details") }} className="nav-item" role="presentation">
+                                        <button className={`nav-link ${currentStep === "details" && "active"}`} id="details-tab" data-bs-toggle="tab"
                                             data-bs-target="#details-tab-pane" type="button" role="tab"
                                             aria-controls="details-tab-pane" aria-selected="true">Details</button>
                                     </li>
-                                    <li className="nav-item" role="presentation">
-                                        <button className="nav-link" id="remarks-tab" data-bs-toggle="tab"
+                                    <li onClick={() => { setCurrentStep("remarks") }} className="nav-item" role="presentation">
+                                        <button className={`nav-link ${currentStep === "remarks" && "active"}`} id="remarks-tab" data-bs-toggle="tab"
                                             data-bs-target="#remarks-tab-pane" type="button" role="tab"
                                             aria-controls="remarks-tab-pane" aria-selected="false">Remarks</button>
                                     </li>
-                                    <li className="nav-item" role="presentation">
-                                        <button className="nav-link" id="services-tab" data-bs-toggle="tab"
+                                    <li onClick={() => { setCurrentStep("visa_fee") }} className="nav-item" role="presentation">
+                                        <button className={`nav-link ${currentStep === "visa_fee" && "active"}`} id="services-tab" data-bs-toggle="tab"
                                             data-bs-target="#services-tab-pane" type="button" role="tab"
                                             aria-controls="services-tab-pane" aria-selected="false">Visa Fee & Service
                                             Charges</button>
@@ -327,7 +331,7 @@ const VisaDetails = () => {
                             </div>
                             <div className="visa-details-tab-content">
                                 <div className="tab-content" id="visaTabContent">
-                                    <div className="tab-pane fade show active" id="details-tab-pane" role="tabpanel"
+                                    {currentStep === "details" && <div className="tab-pane fade show active" id="details-tab-pane" role="tabpanel"
                                         aria-labelledby="details-tab" tabindex="0">
                                         <div className="single-information-wrap mb-40">
                                             <div className="title">
@@ -619,7 +623,7 @@ const VisaDetails = () => {
                                                         <div className="col-md-6">
                                                             <div className="document-card">
                                                                 <div className="document-image">
-                                                                <Image className="popup-image" src={iVisaScreenshot} alt="" />
+                                                                    <Image className="popup-image" src={iVisaScreenshot} alt="" />
                                                                 </div>
                                                                 <div className="document-content">
                                                                     <h6>Thailand Immigration Stamped
@@ -630,7 +634,7 @@ const VisaDetails = () => {
                                                         <div className="col-md-6">
                                                             <div className="document-card">
                                                                 <div className="document-image">
-                                                                <Image className="popup-image" src={iVisaScreenshot} alt="" />
+                                                                    <Image className="popup-image" src={iVisaScreenshot} alt="" />
                                                                 </div>
                                                                 <div className="document-content">
                                                                     <h6>Thailand Immigration Stamped
@@ -641,7 +645,7 @@ const VisaDetails = () => {
                                                         <div className="col-md-6">
                                                             <div className="document-card">
                                                                 <div className="document-image">
-                                                                <Image className="popup-image" src={iVisaScreenshot} alt="" />
+                                                                    <Image className="popup-image" src={iVisaScreenshot} alt="" />
                                                                 </div>
                                                                 <div className="document-content">
                                                                     <h6>Thailand Immigration Stamped
@@ -653,8 +657,8 @@ const VisaDetails = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="tab-pane fade" id="remarks-tab-pane" role="tabpanel"
+                                    </div>}
+                                    {currentStep === "remarks" && <div className="tab-pane fade show active" id="remarks-tab-pane" role="tabpanel"
                                         aria-labelledby="remarks-tab" tabindex="0">
                                         <div className="single-information-wrap">
                                             <div className="title">
@@ -669,8 +673,8 @@ const VisaDetails = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="tab-pane fade" id="services-tab-pane" role="tabpanel"
+                                    </div>}
+                                    {currentStep === "visa_fee" && <div className="tab-pane fade show active" id="services-tab-pane" role="tabpanel"
                                         aria-labelledby="services-tab" tabindex="0">
                                         <div className="single-information-wrap">
                                             <div className="title">
@@ -689,7 +693,7 @@ const VisaDetails = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>}
                                 </div>
                             </div>
                         </div>
