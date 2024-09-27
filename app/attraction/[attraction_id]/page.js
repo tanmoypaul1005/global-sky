@@ -3,6 +3,10 @@ import CommonHeader from '@/app/components/header/CommonHeader'
 import { iAttraction1, iAttraction2, iAttraction3, iAttraction4, iAttraction5 } from '@/util/imageImports'
 import Image from 'next/image'
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JavaScript
+
 
 const AttractionDetails = () => {
     return (
@@ -640,7 +644,7 @@ const AttractionDetails = () => {
                             <div className="booking-form-wrap mb-30">
                                 <h4>Reserve Your Activity</h4>
                                 <p>Secure your spot for an unforgettable nature adventure now!</p>
-                                <div className="nav nav-pills mb-40" role="tablist">
+                                <div className="nav nav-pills " role="tablist">
                                     <button className="nav-link show active" id="v-pills-booking-tab" data-bs-toggle="pill"
                                         data-bs-target="#v-pills-booking" type="button" role="tab"
                                         aria-controls="v-pills-booking" aria-selected="true">Online Booking</button>
@@ -653,7 +657,7 @@ const AttractionDetails = () => {
                                         aria-labelledby="v-pills-booking-tab">
                                         <div className="sidebar-booking-form">
                                             <form>
-                                                <div className="tour-date-wrap mt-50 mb-50">
+                                                <div className="tour-date-wrap mt-50  mb-50">
                                                     <h6>Select Your Booking Date:</h6>
                                                     <div className="form-inner mb-20">
                                                         <div className="form-group">
