@@ -3,7 +3,9 @@ a {
   text-decoration: none !important;
 }
 
-
+body {
+  font-family: 'Arial', sans-serif;
+}
 
 
 /* .swiper-pagination-bullet {

@@ -3,6 +3,8 @@ import CommonHeader from '../components/header/CommonHeader'
 import { iAttraction1, iAttraction2, iAttraction3, iAttraction4, iAttraction5 } from '@/util/imageImports'
 import Image from 'next/image'
 import Link from 'next/link'
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../css/style.css"
 
 const Attraction = () => {
     return (
@@ -42,7 +44,7 @@ const Attraction = () => {
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                             </ul>
-                                            <span>(28 Review)</span>
+                                            <span style={{marginTop:-13}}>(28 Review)</span>
                                         </div>
                                         <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
@@ -86,7 +88,7 @@ const Attraction = () => {
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                             </ul>
-                                            <span>(28 Review)</span>
+                                            <span style={{marginTop:-13}}>(28 Review)</span>
                                         </div>
                                         <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
@@ -130,7 +132,7 @@ const Attraction = () => {
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                             </ul>
-                                            <span>(28 Review)</span>
+                                            <span style={{marginTop:-13}}>(28 Review)</span>
                                         </div>
                                         <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
@@ -174,7 +176,7 @@ const Attraction = () => {
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                             </ul>
-                                            <span>(28 Review)</span>
+                                            <span style={{marginTop:-13}}>(28 Review)</span>
                                         </div>
                                         <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
@@ -221,7 +223,7 @@ const Attraction = () => {
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                             </ul>
-                                            <span>(28 Review)</span>
+                                            <span style={{marginTop:-13}}>(28 Review)</span>
                                         </div>
                                         <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">
@@ -265,7 +267,7 @@ const Attraction = () => {
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                             </ul>
-                                            <span>(28 Review)</span>
+                                            <span style={{marginTop:-13}}>(28 Review)</span>
                                         </div>
                                         <h5><Link href="/attraction/1">Sky Views Observatory</Link></h5>
                                         <ul className="feature-list">

@@ -92,7 +92,7 @@ const AttractionDetails = () => {
                                     Italy & France.
                                 </li>
                             </ul>
-                            <p>Across from Burj Khalifa in Downtown Dubai, you'll find the futuristic-looking Sky Views podium. It connects the top of The Address Sky View, a pair of 50-story elliptical dual towers (237.45 and 260.85 meters in height, respectively), which rise from a curved plinth.</p>
+                            <p>Across from Burj Khalifa in Downtown Dubai, youll find the futuristic-looking Sky Views podium. It connects the top of The Address Sky View, a pair of 50-story elliptical dual towers (237.45 and 260.85 meters in height, respectively), which rise from a curved plinth.</p>
                             <h4>Included and Excluded</h4>
                             <div className="includ-and-exclud-area mb-20">
                                 <ul>
@@ -580,7 +580,7 @@ const AttractionDetails = () => {
                                                         </li>
                                                     </ul>
                                                     <p>However, here are some well-regarded car dealerships known for their customer
-                                                        service, inventory, and overall reputation. It's always a good idea to
+                                                        service, inventory, and overall reputation. Its always a good idea to
                                                         research and read reviews specific...</p>
                                                     <div className="replay-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11"
