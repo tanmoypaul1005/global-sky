@@ -115,7 +115,9 @@ const AttractionDetails = () => {
                             </div>
                             <div className="highlight-tour mb-20">
                                 <h4>Highlights of the Place</h4>
-                                <ul>
+                                <ul style={{
+                                    marginLeft: "-30px"
+                                }}>
                                     <li><span><i className="bi bi-check"></i></span> Immersion in breathtaking, untouched landscapes away from crowded ski resorts.</li>
                                     <li><span><i className="bi bi-check"></i></span> Combining endurance and skill while exploring diverse terrains.</li>
                                     <li><span><i className="bi bi-check"></i></span> Accessing pristine, less-traveled areas for a unique adventure.</li>
@@ -134,7 +136,9 @@ const AttractionDetails = () => {
                                     </h2>
                                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#tourPlan">
                                         <div className="accordion-body">
-                                            <ul>
+                                            <ul style={{
+                                    marginLeft: "-30px"
+                                }}>
                                                 <li><i className="bi bi-check-lg"></i> Passport or Emirates ID is mandatory to be carried.</li>
                                                 <li><i className="bi bi-check-lg"></i> <strong>Weight criteria :</strong> Guests weighing from 30 to 150 kgs will be allowed for the glass slide</li>
                                                 <li><i className="bi bi-check-lg"></i> <strong>Height criteria :</strong> Guests with height ranging from 120 cm to 200 cm will be allowed for the glass slide</li>
@@ -191,7 +195,9 @@ const AttractionDetails = () => {
                                     <div className="total-review">
                                         <h2>9.5</h2>
                                         <div className="review-wrap">
-                                            <ul className="star-list">
+                                            <ul style={{
+                                    marginLeft: "-30px"
+                                }} className="star-list">
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -237,7 +243,7 @@ const AttractionDetails = () => {
                                                                             <div className="star-rating-wrapper">
                                                                                 <ul className="star-rating-list">
                                                                                     <li>
-                                                                                        <div className="rating-container"
+                                                                                        <div className="rating-container "
                                                                                             data-rating="0">
                                                                                             <i
                                                                                                 className="bi bi-star-fill star-icon"></i>
@@ -253,7 +259,7 @@ const AttractionDetails = () => {
                                                                                         <span>Overall</span>
                                                                                     </li>
                                                                                     <li>
-                                                                                        <div className="rating-container"
+                                                                                        <div  className="rating-container"
                                                                                             data-rating="0">
                                                                                             <i
                                                                                                 className="bi bi-star-fill star-icon"></i>
@@ -355,7 +361,9 @@ const AttractionDetails = () => {
                                                     <ul className="review-item-list">
                                                         <li>
                                                             <span>Overall</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list ">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -365,7 +373,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Transport</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }}className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -375,7 +385,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Food</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -385,7 +397,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Destination</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -395,7 +409,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Hospitality</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -456,7 +472,9 @@ const AttractionDetails = () => {
                                                     <ul className="review-item-list">
                                                         <li>
                                                             <span>Overall</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -466,7 +484,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Transport</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -476,7 +496,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Food</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -486,7 +508,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Destination</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -496,7 +520,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Hospitality</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -532,7 +558,9 @@ const AttractionDetails = () => {
                                                     <ul className="review-item-list">
                                                         <li>
                                                             <span>Overall</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -542,7 +570,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Transport</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -552,7 +582,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Food</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -562,7 +594,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Destination</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -572,7 +606,9 @@ const AttractionDetails = () => {
                                                         </li>
                                                         <li>
                                                             <span>Hospitality</span>
-                                                            <ul className="star-list">
+                                                            <ul style={{
+                                                                marginLeft: "-30px"
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
