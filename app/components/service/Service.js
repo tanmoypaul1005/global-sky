@@ -364,6 +364,103 @@ const Service = () => {
                                                     }
                                                 />
 
+                                                <ServiceDropdown
+                                                    laval='To'
+                                                    value="Nepal"
+                                                    icon={<>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M16.0067 15.8571C18.5606 11.8496 18.2395 12.3496 18.3131 12.2451C19.2429 10.9336 19.7344 9.39009 19.7344 7.78125C19.7344 3.51469 16.2721 0 12 0C7.74178 0 4.26562 3.50775 4.26562 7.78125C4.26562 9.38906 4.76737 10.973 5.72766 12.3022L7.99322 15.8572C5.57095 16.2294 1.45312 17.3387 1.45312 19.7812C1.45312 20.6716 2.03428 21.9405 4.80291 22.9293C6.73612 23.6197 9.29208 24 12 24C17.0637 24 22.5469 22.5716 22.5469 19.7812C22.5469 17.3383 18.4339 16.2301 16.0067 15.8571ZM6.9023 11.5287C6.89457 11.5166 6.88649 11.5047 6.87806 11.4931C6.07898 10.3938 5.67188 9.09098 5.67188 7.78125C5.67188 4.26478 8.50341 1.40625 12 1.40625C15.4893 1.40625 18.3281 4.26605 18.3281 7.78125C18.3281 9.09309 17.9287 10.3517 17.1728 11.4221C17.1051 11.5114 17.4585 10.9624 12 19.5276L6.9023 11.5287ZM12 22.5938C6.46903 22.5938 2.85938 20.968 2.85938 19.7812C2.85938 18.9836 4.71413 17.6721 8.82413 17.1609L11.407 21.2138C11.4705 21.3135 11.5582 21.3956 11.6618 21.4525C11.7654 21.5093 11.8817 21.5391 12 21.5391C12.1182 21.5391 12.2345 21.5093 12.3381 21.4525C12.4417 21.3956 12.5294 21.3135 12.5929 21.2138L15.1757 17.1609C19.2858 17.6721 21.1406 18.9836 21.1406 19.7812C21.1406 20.9579 17.5635 22.5938 12 22.5938Z" />
+                                                            <path
+                                                                d="M12 4.26562C10.0615 4.26562 8.48438 5.84273 8.48438 7.78125C8.48438 9.71977 10.0615 11.2969 12 11.2969C13.9385 11.2969 15.5156 9.71977 15.5156 7.78125C15.5156 5.84273 13.9385 4.26562 12 4.26562ZM12 9.89062C10.8369 9.89062 9.89062 8.94436 9.89062 7.78125C9.89062 6.61814 10.8369 5.67188 12 5.67188C13.1631 5.67188 14.1094 6.61814 14.1094 7.78125C14.1094 8.94436 13.1631 9.89062 12 9.89062Z" />
+                                                        </svg>
+                                                    </>}
+
+                                                    content={
+                                                        <div className="custom-select-wrap active">
+                                                            <div className="custom-select-search-area">
+                                                                <i className='bi bi-search'></i>
+                                                                <input type="text" placeholder="Type Your Destination" />
+                                                            </div>
+                                                            <ul className="option-list">
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Bangladesh</h6>
+                                                                        <p>Dhaka, Cox s Bazar, Sylhet</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>50  <br></br> Tour</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Nepal</h6>
+                                                                        <p>KATHMANDU, POKHARA</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>30  <br></br> Tour</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>India</h6>
+                                                                        <p>Delhi, Agra, Himachal</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>30  <br></br> Tour</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Brazil</h6>
+                                                                        <p>Sao Paulo, Salvador, Bonito</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>20  <br></br> Tour</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Thailand</h6>
+                                                                        <p>Bangkok, Phuket, Trang</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>40  <br></br> Tour</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Span</h6>
+                                                                        <p>Barcelona, Madrid</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>20  <br></br> Tour</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Dubai</h6>
+                                                                        <p>Abu Dhabi, Burj Khalifa</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>35  <br></br> Tour</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>United States</h6>
+                                                                        <p>New York, Las Vegas, Colorado</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>45  <br></br> Tour</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    }
+                                                />
+
                                                 {/* <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
                                                     <div className="single-search-box">
                                                         <div className="icon">
@@ -466,7 +563,7 @@ const Service = () => {
                                                         </div>
                                                     </div>
                                                 </div> */}
-                                                <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
+                                                {/* <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
                                                     <div className="single-search-box">
                                                         <div className="icon">
                                                             <svg width="24" height="24" viewBox="0 0 24 24"
@@ -567,7 +664,7 @@ const Service = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                                 <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
                                                     <div className="single-search-box">
                                                         <div className="icon">
@@ -672,7 +769,113 @@ const Service = () => {
                                     <form>
                                         <div className="filter-area">
                                             <div className="row g-xl-4 gy-4">
-                                                <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
+
+                                                <ServiceDropdown
+                                                    laval='Location'
+                                                    value="Dubai"
+                                                    icon={<>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                                                            viewBox="0 0 27 27">
+                                                            <path
+                                                                d="M18.0075 17.8392C20.8807 13.3308 20.5195 13.8933 20.6023 13.7757C21.6483 12.3003 22.2012 10.5639 22.2012 8.75391C22.2012 3.95402 18.3062 0 13.5 0C8.7095 0 4.79883 3.94622 4.79883 8.75391C4.79883 10.5627 5.3633 12.3446 6.44361 13.8399L8.99237 17.8393C6.26732 18.2581 1.63477 19.506 1.63477 22.2539C1.63477 23.2556 2.28857 24.6831 5.40327 25.7955C7.57814 26.5722 10.4536 27 13.5 27C19.1966 27 25.3652 25.3931 25.3652 22.2539C25.3652 19.5055 20.7381 18.2589 18.0075 17.8392ZM7.76508 12.9698C7.75639 12.9562 7.7473 12.9428 7.73782 12.9298C6.83886 11.6931 6.38086 10.2274 6.38086 8.75391C6.38086 4.79788 9.56633 1.58203 13.5 1.58203C17.4255 1.58203 20.6191 4.7993 20.6191 8.75391C20.6191 10.2297 20.1698 11.6457 19.3195 12.8498C19.2432 12.9503 19.6408 12.3327 13.5 21.9686L7.76508 12.9698ZM13.5 25.418C7.27766 25.418 3.2168 23.589 3.2168 22.2539C3.2168 21.3566 5.30339 19.8811 9.92714 19.306L12.8329 23.8656C12.9044 23.9777 13.0029 24.0701 13.1195 24.134C13.2361 24.198 13.367 24.2315 13.4999 24.2315C13.6329 24.2315 13.7638 24.198 13.8804 24.134C13.9969 24.0701 14.0955 23.9777 14.167 23.8656L17.0727 19.306C21.6966 19.8811 23.7832 21.3566 23.7832 22.2539C23.7832 23.5776 19.7589 25.418 13.5 25.418Z" />
+                                                            <path
+                                                                d="M13.5 4.79883C11.3192 4.79883 9.54492 6.57308 9.54492 8.75391C9.54492 10.9347 11.3192 12.709 13.5 12.709C15.6808 12.709 17.4551 10.9347 17.4551 8.75391C17.4551 6.57308 15.6808 4.79883 13.5 4.79883ZM13.5 11.127C12.1915 11.127 11.127 10.0624 11.127 8.75391C11.127 7.44541 12.1915 6.38086 13.5 6.38086C14.8085 6.38086 15.873 7.44541 15.873 8.75391C15.873 10.0624 14.8085 11.127 13.5 11.127Z" />
+                                                        </svg>
+                                                    </>}
+
+                                                    content={
+                                                        <div className="custom-select-wrap active">
+                                                            <div className="custom-select-search-area">
+                                                                <i className='bx bx-search'></i>
+                                                                <input type="text" placeholder="Type Your Destination" />
+                                                            </div>
+                                                            <ul className="option-list">
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Dubai</h6>
+                                                                        <p>United Arab Emirates</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>AE</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>{`Cox's Bazar`}</h6>
+                                                                        <p>Bangladesh</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>BD</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>KATHMANDU</h6>
+                                                                        <p>Nepal</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>NP</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Delhi</h6>
+                                                                        <p>India</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>IN</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Sao Paulo</h6>
+                                                                        <p>Brazil</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>BR</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Bangkok</h6>
+                                                                        <p>Thailand</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>TH</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Barcelona</h6>
+                                                                        <p>Spain</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>ES</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>Abu Dhabi</h6>
+                                                                        <p>United Arab Emirates</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>AE</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="destination">
+                                                                        <h6>New York</h6>
+                                                                        <p>United States</p>
+                                                                    </div>
+                                                                    <div className="tour">
+                                                                        <span>US</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    }
+                                                />
+                                                {/* <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
                                                     <div className="single-search-box">
                                                         <div className="icon">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
@@ -782,7 +985,7 @@ const Service = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                                 <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
                                                     <div className="single-search-box">
                                                         <div className="icon">

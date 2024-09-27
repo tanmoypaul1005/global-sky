@@ -1,18 +1,32 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 
 const ServiceDropdown = ({ value="",laval = "", icon = <></>, content = <></> }) => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
+    const handleClickOutside = (event) => {
+        if (dropdownRef?.current && !dropdownRef?.current?.contains(event.target)) {
+            setIsDropdownOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
         <div
             className="col-xl-3 col-sm-6 d-flex justify-content-center">
-            <div className="single-search-box">
+            <div ref={dropdownRef} className="single-search-box">
                 <div className="icon">
                     {icon}
                 </div>
