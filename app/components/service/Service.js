@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react'
+import CountryDropdown from '../CountryDropdown';
 
 
 const Service = () => {
@@ -58,7 +59,8 @@ const Service = () => {
                                     <form>
                                         <div className="filter-area">
                                             <div className="row g-xl-4 gy-4">
-                                                <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
+                                                <CountryDropdown/>
+                                                {/* <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
                                                     <div className="single-search-box">
                                                         <div className="icon">
                                                             <svg width="24" height="24" viewBox="0 0 24 24"
@@ -92,7 +94,7 @@ const Service = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                                 <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
                                                     <div className="single-search-box">
                                                         <div className="icon">
