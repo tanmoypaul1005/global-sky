@@ -1,4 +1,5 @@
 "use client"
+import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { iCountryImage, iCountryImage2, iCountryImage3, iCountryImage4, iCountryImage5, iCountryImage6, iCountryImage7, iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4, iFlag, iFlag2, iFlag3, iFlag4, iFlag5, iFlag6, iFlag7, iFlag8, iLogo, iVisaSection } from "@/util/imageImports";
@@ -15,6 +16,16 @@ export default function Home() {
     const backgroundImageStyle = {
         backgroundImage: 'linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://i.imgur.com/poXW1wg.jpeg)'
     };
+
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+      setIsClient(true);
+    }, []);
+  
+    if (!isClient) {
+      return null; // Render nothing on the server
+    }
 
     return (
         <body className="backgraound-color">
