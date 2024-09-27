@@ -8,7 +8,8 @@ import ProvideVisa from "./components/Providevisa";
 import Link from "next/link";
 import Service from "./components/service/Service";
 import VisaAccordion from "./components/VisaAccordion";
-import Demo from "./components/Demo";
+
+
 export default function Home() {
 
     const backgroundImageStyle = {
