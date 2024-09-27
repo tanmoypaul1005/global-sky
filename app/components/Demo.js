@@ -43,8 +43,7 @@ export default function Demo() {
                         spaceBetween: 30
                     }
                 }}
-                // navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
+                modules={[Autoplay]}
                 className="mySwiper"
             >
                 <SwiperSlide>
