@@ -14,39 +14,25 @@ const OfferBannerSlider = () => {
     const pagination = {
         clickable: true,
         renderBullet: function (index, className) {
-            return '<span class="' + className + ' custom-bullet">' + (index + 1) + '</span>';
+          return '<span class="' + className + ' custom-bullet">' + "</span>";
         },
-    };
+      };
+    
 
     return (
-        <>
-            <Swiper
-                slidesPerView={2}
-                spaceBetween={30}
-                navigation={{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                }}
-                breakpoints={{
-                    // when window width is >= 320px
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 10
-                    },
-                    // when window width is >= 640px
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
-                    },
-                    // when window width is >= 1024px
-                    1024: {
-                        slidesPerView: 2,
-                        spaceBetween: 30
-                    }
-                }}
-                // pagination={pagination}
-                modules={[Pagination]}
-               className="offer-banner-swiper"
+            <Swiper 
+            slidesPerView={2}
+            spaceBetween={30}
+            navigation={false}
+            breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                640: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 2, spaceBetween: 30 },
+            }}
+            // pagination={pagination}
+            // modules={[Pagination]}
+            className="mySwiper"
+        
             >
                 <SwiperSlide className="custom-swiper-slide">
                     <div className="offer-card">
@@ -81,11 +67,10 @@ const OfferBannerSlider = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            {/* Swiper Navigation buttons */}
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
-        </>
     );
 };
 
 export default OfferBannerSlider;
+
+
+
