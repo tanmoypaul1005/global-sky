@@ -1,12 +1,15 @@
+"use client"
 import CommonHeader from '@/app/components/header/CommonHeader'
+import { iAttraction1, iAttraction2, iAttraction3, iAttraction4, iAttraction5 } from '@/util/imageImports'
+import Image from 'next/image'
 import React from 'react'
 
 const AttractionDetails = () => {
     return (
         <body className="backgraound-color">
-            {/* <!-- hearder section strats here --> */}
+            
             <CommonHeader />
-            {/* <!-- hearder section ends here --> */}
+            
             {/* <!-- Banner section strats here --> */}
             <div className="about-breadcrum-section mb-120">
                 <div className="container">
@@ -28,7 +31,7 @@ const AttractionDetails = () => {
                                 <div className="row align-items-center g-3">
                                     <div className="col-lg-6">
                                         <div className="gallery-img-wrap">
-                                            <img src="assets/image/attraction-01.png" alt="" />
+                                            <Image src={iAttraction1} alt="" />
                                             <a data-fancybox="gallery-01" href="assets/image/attraction-01.png"><i
                                                 className="bi bi-eye"></i></a>
                                         </div>
@@ -37,27 +40,27 @@ const AttractionDetails = () => {
                                         <div className="row g-3 h-100">
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap">
-                                                    <img src="assets/image/attraction-02.png" alt="" />
+                                                    <Image src={iAttraction2} alt="" />
                                                     <a data-fancybox="gallery-01" href="assets/image/attraction-02.png"><i
                                                         className="bi bi-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap">
-                                                    <img src="assets/image/attraction-03.png" alt="" />
+                                                    <Image src={iAttraction3} alt="" />
                                                     <a data-fancybox="gallery-01" href="assets/image/attraction-03.png"><i
                                                         className="bi bi-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap active">
-                                                    <img src="assets/image/attraction-04.png" alt="" />
+                                                    <Image src={iAttraction4} alt="" />
                                                     <button className="StartSlideShowFirstImage"><i className="bi bi-plus-lg"></i> View More Images</button>
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap active">
-                                                    <img src="assets/image/attraction-05.png" alt="" />
+                                                    <Image src={iAttraction5} alt="" />
                                                     <a data-fancybox="gallery-01"
                                                         href="https://www.youtube.com/watch?v=u31qwQUeGuM"><i
                                                             className="bi bi-play-circle"></i> Watch Video</a>
@@ -326,8 +329,7 @@ const AttractionDetails = () => {
                                                         </div>
                                                         <div className="col-lg-4 d-lg-flex d-none">
                                                             <div className="modal-form-image">
-                                                                <img src="assets/image/attraction-01.png" alt="image"
-                                                                    className="img-fluid" />
+                                                                <Image src={iAttraction1} alt="image" className="img-fluid" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -343,7 +345,7 @@ const AttractionDetails = () => {
                                         <li>
                                             <div className="single-comment-area">
                                                 <div className="author-img">
-                                                    <img src="assets/image/attraction-01.png" alt="" />
+                                                    <Image src={iAttraction1} alt="" />
                                                 </div>
                                                 <div className="comment-content">
                                                     <div className="author-name-deg">
@@ -419,7 +421,7 @@ const AttractionDetails = () => {
                                                 <li>
                                                     <div className="single-comment-area">
                                                         <div className="author-img">
-                                                            <img src="assets/image/attraction-01.png" alt="" />
+                                                            <Image src={iAttraction1} alt="" />
                                                         </div>
                                                         <div className="comment-content">
                                                             <div className="author-name-deg">
@@ -444,7 +446,7 @@ const AttractionDetails = () => {
                                         <li>
                                             <div className="single-comment-area">
                                                 <div className="author-img">
-                                                    <img src="assets/image/attraction-01.png" alt="" />
+                                                    <Image src={iAttraction1} alt="" />
                                                 </div>
                                                 <div className="comment-content">
                                                     <div className="author-name-deg">
@@ -520,7 +522,7 @@ const AttractionDetails = () => {
                                         <li>
                                             <div className="single-comment-area">
                                                 <div className="author-img">
-                                                    <img src="assets/image/attraction-01.png" alt="" />
+                                                    <Image src={iAttraction1} alt="" />
                                                 </div>
                                                 <div className="comment-content">
                                                     <div className="author-name-deg">
