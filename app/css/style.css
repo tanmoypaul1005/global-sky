@@ -2486,6 +2486,7 @@ header.about-us .nav-right .mobile-menu-btn {
   transition: 0.5s;
   cursor: pointer;
   padding: 0 10px;
+  margin-left: -30px;
   line-height: 1;
   margin-bottom: 5px;
   position: relative;
