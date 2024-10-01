@@ -1,17 +1,17 @@
-"use client"
-import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import CommonModal from '@/app/components/modal/CommonModal'
+import React from 'react'
 
-const CommonModal = ({ show, handleClose, title, children }) => {
+const ApplyModal = () => {
     return (
-        <Modal size="lg" show={true} dialogClassName="" onHide={handleClose}>
-            <Modal.Body>
-            <div className=" " id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+        <div>
+         <CommonModal> 
+                
+            <div style={{display:"block"}} className="modal fade visa-apply-modal show" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
-                <div className="modal-dialog  modal-dialog-centered">
+                <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content form-wapper">
-                        <button type="button" className="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
-                            className="bi bi-x-circle"></i></button>
+                        {/* <button type="button" className="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            className="bi bi-x-circle"></i></button> */}
                         <div className="modal-header">
                             <ul className="visa-form-step" id="progressbar">
                                 <li>Step 1: Travel Date</li>
@@ -54,7 +54,7 @@ const CommonModal = ({ show, handleClose, title, children }) => {
                                         </div>
                                     </div>
                                 </fieldset>
-                                <fieldset className="postcode">
+                                {/* <fieldset className="postcode">
                                     <div className="row">
                                         <div className="col-lg-4 d-flex align-items-center">
                                             <div className="step-title">
@@ -218,18 +218,15 @@ const CommonModal = ({ show, handleClose, title, children }) => {
                                             </div>
                                         </div>
                                     </div>
-                                </fieldset>
+                                </fieldset> */}
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>
-            </Modal.Body>
+            </div> 
+            </CommonModal>
+        </div>
+    )
+}
 
-
-        </Modal>
-    );
-};
-
-export default CommonModal;
-
+export default ApplyModal

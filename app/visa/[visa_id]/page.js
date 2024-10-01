@@ -5,6 +5,7 @@ import { iAlart, iFlagImage, iVisaScreenshot } from '@/util/imageImports'
 import Image from 'next/image'
 import CommonModal from '@/app/components/modal/CommonModal'
 import Footer from '@/app/components/Footer'
+import ApplyModal from './modal/ApplyModal'
 
 const VisaDetails = () => {
 
@@ -371,7 +372,7 @@ const VisaDetails = () => {
                     </div>
                 </div>
             </div> */}
-            <CommonModal/>
+            <ApplyModal/>
             <div
                 style={{ display: 'none' }}
                 className="my-template">
