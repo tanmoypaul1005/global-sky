@@ -9,6 +9,118 @@ const VisaDetails = () => {
     const [currentStep, setCurrentStep] = useState("details");
 
     const [selectIndex, setSelectIndex] = useState(null);
+
+
+    const accordionData = [
+        {
+            id: 'faqheadingOne',
+            target: '#faqcollapseOne',
+            title: '1. Service Holder',
+            content: [
+                {
+                    number: '01.',
+                    title: 'Passport',
+                    description: 'Original passport required with;',
+                    list: [
+                        'a. Minimum 6 months validity',
+                        'b. At least 2 Blank pages'
+                    ],
+                    note: 'Note: Old passport required (if any)'
+                },
+                {
+                    number: '02.',
+                    title: 'Passport',
+                    description: 'Original passport required with;',
+                    list: [
+                        'a. Minimum 6 months validity',
+                        'b. At least 2 Blank pages'
+                    ],
+                    note: 'Note: Old passport required (if any)'
+                }
+            ]
+        },
+        {
+            id: 'faqheadingTwo',
+            target: '#faqcollapseTwo',
+            title: '02. What payment methods do you accept?',
+            content: [
+                {
+                    number: '01.',
+                    title: 'Passport',
+                    description: 'Original passport required with;',
+                    list: [
+                        'a. Minimum 6 months validity',
+                        'b. At least 2 Blank pages'
+                    ],
+                    note: 'Note: Old passport required (if any)'
+                },
+                {
+                    number: '02.',
+                    title: 'Passport',
+                    description: 'Original passport required with;',
+                    list: [
+                        'a. Minimum 6 months validity',
+                        'b. At least 2 Blank pages'
+                    ],
+                    note: 'Note: Old passport required (if any)'
+                }
+            ]
+        },
+        {
+            id: 'faqheadingThree',
+            target: '#faqcollapseThree',
+            title: '03. What is your cancellation policy?',
+            content: [
+                {
+                    number: '01.',
+                    title: 'Passport',
+                    description: 'Original passport required with;',
+                    list: [
+                        'a. Minimum 6 months validity',
+                        'b. At least 2 Blank pages'
+                    ],
+                    note: 'Note: Old passport required (if any)'
+                },
+                {
+                    number: '02.',
+                    title: 'Passport',
+                    description: 'Original passport required with;',
+                    list: [
+                        'a. Minimum 6 months validity',
+                        'b. At least 2 Blank pages'
+                    ],
+                    note: 'Note: Old passport required (if any)'
+                }
+            ]
+        },
+        {
+            id: 'faqheadingFour',
+            target: '#faqcollapseFour',
+            title: '04. Can I make changes to my reservation after booking?',
+            content: [
+                {
+                    number: '01.',
+                    title: 'Passport',
+                    description: 'Original passport required with;',
+                    list: [
+                        'a. Minimum 6 months validity',
+                        'b. At least 2 Blank pages'
+                    ],
+                    note: 'Note: Old passport required (if any)'
+                },
+                {
+                    number: '02.',
+                    title: 'Passport',
+                    description: 'Original passport required with;',
+                    list: [
+                        'a. Minimum 6 months validity',
+                        'b. At least 2 Blank pages'
+                    ],
+                    note: 'Note: Old passport required (if any)'
+                }
+            ]
+        }
+    ];
     
 
     return (
@@ -411,7 +523,7 @@ const VisaDetails = () => {
                                         </div>
 
 
-                                        
+
                                         <div className="single-information-wrap mb-40">
                                             <div className="title">
                                                 <h6>Documents Requirements</h6>
@@ -467,7 +579,7 @@ const VisaDetails = () => {
                                                                 02. What payment methods do you accept?
                                                             </button>
                                                         </h2>
-                                                        <div id="faqcollapseTwo" className="accordion-collapse collapse"
+                                                        <div id="faqcollapseTwo" className="accordion-collapse collapse show"
                                                             aria-labelledby="faqheadingTwo" data-bs-parent="#accordionGeneral">
                                                             <div className="accordion-body">
                                                                 <div className="single-document">
@@ -773,3 +885,6 @@ const VisaDetails = () => {
 }
 
 export default VisaDetails
+
+
+
