@@ -3,7 +3,7 @@ import React from 'react';
 
 const CommonModal = ({ id, title, steps, children }) => {
     return (
-        <div className="modal fade visa-apply-modal active" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+        <div className="modal fade visa-apply-modal" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
         tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
         <div className="modal-dialog  modal-dialog-centered">
             <div className="modal-content form-wapper">
