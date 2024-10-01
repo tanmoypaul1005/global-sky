@@ -1,8 +1,10 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import CommonHeader from '@/app/components/header/CommonHeader'
 import { iFlagImage, iVisaScreenshot } from '@/util/imageImports'
 import Image from 'next/image'
+import CommonModal from '@/app/components/modal/CommonModal'
+import Footer from '@/app/components/Footer'
 
 const VisaDetails = () => {
 
@@ -10,6 +12,15 @@ const VisaDetails = () => {
 
     const [selectIndex, setSelectIndex] = useState(null);
 
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+      setIsClient(true);
+    }, []);
+  
+    if (!isClient) {
+      return null; // Render nothing on the server
+    }
 
     const accordionData = [
         {
@@ -142,7 +153,7 @@ const VisaDetails = () => {
             </div>
             {/* <!-- Banner section ends here -->
             <!-- Modal --> */}
-            <div className="modal fade visa-apply-modal" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+            {/* <div className="modal fade visa-apply-modal" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
                 <div className="modal-dialog  modal-dialog-centered">
                     <div className="modal-content form-wapper">
@@ -359,8 +370,8 @@ const VisaDetails = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> */}
+<CommonModal/>
             <div
                 style={{ display: 'none' }}
                 className="my-template">
@@ -932,7 +943,7 @@ const VisaDetails = () => {
                 <img className="modal-image" id="modalImage" />
             </div>
 
-
+      <Footer/>
         </body>
     )
 }

@@ -9,6 +9,7 @@ import ProvideVisa from "./components/Providevisa";
 import Link from "next/link";
 import Service from "./components/service/Service";
 import VisaAccordion from "./components/VisaAccordion";
+import Footer from './components/Footer';
 
 
 export default function Home() {
@@ -817,6 +818,9 @@ export default function Home() {
             <ClientSpeak />
 
             <VisaAccordion />
+
+
+            <Footer/>
         </body>
     );
 }
