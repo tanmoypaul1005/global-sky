@@ -1,60 +1,62 @@
-import CommonModal from '@/app/components/modal/CommonModal'
-import React from 'react'
 
-const ApplyModal = () => {
+import React from 'react'
+import { Modal, Button } from 'react-bootstrap';
+
+const ApplyModal = ({ show, handleClose, title, children }) => {
     return (
         <div>
-         <CommonModal> 
-                
-            <div style={{display:"block"}} className="modal fade visa-apply-modal show" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
-                tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
-                <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content form-wapper">
-                        {/* <button type="button" className="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
-                            className="bi bi-x-circle"></i></button> */}
-                        <div className="modal-header">
-                            <ul className="visa-form-step" id="progressbar">
-                                <li>Step 1: Travel Date</li>
-                                <li>Step 2: Visa Type</li>
-                                <li>Step 3: Personal Info</li>
-                            </ul>
-                        </div>
-                        <div className="modal-body">
-                            <form id="msform" className="visa-form">
-                                <fieldset className="postcode">
-                                    <div className="row">
-                                        <div className="col-lg-4 d-flex align-items-center">
-                                            <div className="step-title">
-                                                <h4>Travel Details</h4>
-                                                <p>Provide your travel details.</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-8">
-                                            <div className="from-wrapper">
-                                                <div className="row">
-                                                    <div className="col-md-12 mb-35">
-                                                        <div className="form-inner">
-                                                            <label>Departure Date</label>
-                                                            <input type="text" name="inOut" readonly />
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-12 mb-35">
-                                                        <div className="form-inner">
-                                                            <label>Return Date</label>
-                                                            <input type="text" name="inOut" readonly />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    className="next-prev-btn d-flex align-items-center justify-content-end flex-wrap gap-3">
-                                                    <button className="next primary-btn1">Next <i className="bi bi-arrow-right"></i>
-                                                    </button>
+            <Modal size="lg" show={true} dialogClassName="" onHide={handleClose}>
+
+                <div style={{ display: "block", paddingLeft: "0px" }} className="modal fade visa-apply-modal show" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content form-wapper">
+                            <button type="button" className="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
+                                className="bi bi-x-circle"></i></button>
+                            <div className="modal-header">
+                                <ul className="visa-form-step" id="progressbar">
+                                    <li>Step 1: Travel Date</li>
+                                    <li>Step 2: Visa Type</li>
+                                    <li>Step 3: Personal Info</li>
+                                </ul>
+                            </div>
+
+                            <div className="modal-body">
+                                <form id="msform" className="visa-form">
+                                    <fieldset className="postcode active">
+                                        <div className="row">
+                                            <div className="col-lg-4 d-flex align-items-center">
+                                                <div className="step-title">
+                                                    <h4>Travel Details</h4>
+                                                    <p>Provide your travel details.</p>
                                                 </div>
                                             </div>
+                                            <div className="col-lg-8">
+                                                <div className="from-wrapper">
+                                                    <div className="row">
+                                                        <div className="col-md-12 mb-35">
+                                                            <div className="form-inner">
+                                                                <label>Departure Date</label>
+                                                                <input type="text" name="inOut" readonly />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-12 mb-35">
+                                                            <div className="form-inner">
+                                                                <label>Return Date</label>
+                                                                <input type="text" name="inOut" readonly />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        className="next-prev-btn d-flex align-items-center justify-content-end flex-wrap gap-3">
+                                                        <button className="next primary-btn1">Next <i className="bi bi-arrow-right"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </fieldset>
-                                {/* <fieldset className="postcode">
+                                    </fieldset>
+                                    {/* <fieldset className="postcode">
                                     <div className="row">
                                         <div className="col-lg-4 d-flex align-items-center">
                                             <div className="step-title">
@@ -219,12 +221,12 @@ const ApplyModal = () => {
                                         </div>
                                     </div>
                                 </fieldset> */}
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> 
-            </CommonModal>
+            </Modal>
         </div>
     )
 }

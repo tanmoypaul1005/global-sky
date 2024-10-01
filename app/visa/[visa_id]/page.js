@@ -372,7 +372,7 @@ const VisaDetails = () => {
                     </div>
                 </div>
             </div> */}
-            {/* <ApplyModal/> */}
+            <ApplyModal/>
             <div
                 style={{ display: 'none' }}
                 className="my-template">
