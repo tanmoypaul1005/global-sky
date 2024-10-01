@@ -1,15 +1,29 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import CommonHeader from '@/app/components/header/CommonHeader'
-import { iFlagImage, iVisaScreenshot } from '@/util/imageImports'
+import { iAlart, iFlagImage, iVisaScreenshot } from '@/util/imageImports'
 import Image from 'next/image'
+import CommonModal from '@/app/components/modal/CommonModal'
+import Footer from '@/app/components/Footer'
+import ApplyModal from './modal/ApplyModal'
 
 const VisaDetails = () => {
 
     const [currentStep, setCurrentStep] = useState("details");
 
+    const [showModal, setShowModal] = useState(false);
+
     const [selectIndex, setSelectIndex] = useState(null);
 
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+      setIsClient(true);
+    }, []);
+  
+    if (!isClient) {
+      return null; // Render nothing on the server
+    }
 
     const accordionData = [
         {
@@ -142,7 +156,7 @@ const VisaDetails = () => {
             </div>
             {/* <!-- Banner section ends here -->
             <!-- Modal --> */}
-            <div className="modal fade visa-apply-modal" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+            {/* <div className="modal fade visa-apply-modal" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
                 tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
                 <div className="modal-dialog  modal-dialog-centered">
                     <div className="modal-content form-wapper">
@@ -359,7 +373,8 @@ const VisaDetails = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <ApplyModal show={showModal} setShowModal={setShowModal} />
             <div
                 style={{ display: 'none' }}
                 className="my-template">
@@ -397,7 +412,6 @@ const VisaDetails = () => {
                 </div>
             </div>
 
-
             <div className="visa-apply-section mb-50">
                 <div className="container">
                     <div className="row">
@@ -410,7 +424,7 @@ const VisaDetails = () => {
                                     <h5>Tourist Visa</h5>
                                     <p>We understand your needs and deliver digital marketing through unique selling offer that
                                         our country specialists oneto proposition.</p>
-                                    <button className="primary-btn1" data-bs-toggle="modal" data-bs-target="#visa-apply-modal">Apply
+                                    <button onClick={()=>{setShowModal(true)}} className="primary-btn1" data-bs-toggle="modal" data-bs-target="#visa-apply-modal">Apply
                                         Now</button>
                                 </div>
                             </div>
@@ -418,7 +432,6 @@ const VisaDetails = () => {
                     </div>
                 </div>
             </div>
-
 
             <div className="visa-details-section mb-90">
                 <div className="container">
@@ -529,7 +542,7 @@ const VisaDetails = () => {
                                             </div>
                                             <div className="content">
                                                 <div className="accordion" id="accordionGeneral">
-                                                    {accordionData.map((item, index) => (
+                                                    {accordionData?.map((item, index) => (
                                                         <div className="accordion-item" key={index}>
                                                             <h2
                                                                 onClick={() => { 
@@ -538,14 +551,14 @@ const VisaDetails = () => {
                                                                         return
                                                                     }
                                                                     setSelectIndex(index) 
-                                                                }
-                                                                }
+                                                                }}
                                                                 className="accordion-header" id={item.id}>
-                                                                <button className="accordion-button" type="button"
+                                                                <button className={`accordion-button ${selectIndex !== index  && "collapsed"} `} type="button"
                                                                     data-bs-toggle="collapse" data-bs-target={item.target}
                                                                     aria-expanded="true" aria-controls={item.target.substring(1)}>
                                                                     {item.title}
                                                                 </button>
+                                                                
                                                             </h2>
                                                             <div id={item.target.substring(1)} className={`accordion-collapse collapse ${selectIndex === index && "show"}`}
                                                                 aria-labelledby={item.id} data-bs-parent="#accordionGeneral">
@@ -749,9 +762,8 @@ const VisaDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div> */}
-
-
+                                        </div> 
+                                        */}
 
                                         <div className="single-information-wrap mb-40">
                                             <div className="title">
@@ -876,7 +888,7 @@ const VisaDetails = () => {
                                     <div className="content">
                                         <h5>U.A.E Electronic visa (MALE) - MUST FLY VIA EMIRATES Type: E-Visa</h5>
                                         <ul>
-                                            <li>
+                                            <li style={{marginLeft:"-30px"}}>
                                                 <span>Validity</span>
                                                 <h6>60 Days</h6>
                                             </li>
@@ -886,7 +898,7 @@ const VisaDetails = () => {
                                             </li>
                                         </ul>
                                         <h6>AED 799 / <span>Person</span></h6>
-                                        <span><img src="assets/image/alart.svg" alt="" /> Visa issuance rights reserved by the embassy</span>
+                                        <span><Image src={iAlart} alt="" /> Visa issuance rights reserved by the embassy</span>
                                     </div>
                                     <button>SELECT OFFER</button>
                                 </div>
@@ -895,7 +907,7 @@ const VisaDetails = () => {
                                     <div className="content">
                                         <h5>Electronic visa 5 years multiple entry Type: E-Visa</h5>
                                         <ul>
-                                            <li>
+                                            <li style={{marginLeft:"-30px"}}>
                                                 <span>Validity</span>
                                                 <h6>1825 Days</h6>
                                             </li>
@@ -905,7 +917,7 @@ const VisaDetails = () => {
                                             </li>
                                         </ul>
                                         <h6>AED 5990 / <span>Person</span></h6>
-                                        <span><img src="assets/image/alart.svg" alt="" /> Visa issuance rights reserved by the embassy</span>
+                                        <span><Image src={iAlart} alt="" /> Visa issuance rights reserved by the embassy</span>
                                     </div>
                                     <button>SELECT OFFER</button>
                                 </div>
@@ -934,7 +946,7 @@ const VisaDetails = () => {
                 <img className="modal-image" id="modalImage" />
             </div>
 
-
+      <Footer/>
         </body>
     )
 }

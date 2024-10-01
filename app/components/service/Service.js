@@ -55,7 +55,7 @@ const Service = () => {
                     <div className="tab-content" id="pills-tab2Content">
                         {
                             state === "visa" &&
-                            <div className="tab-pane fade show active" id="visa" role="tabpanel">
+                            <div className="tab-pane content fade show active" id="visa" role="tabpanel">
                                 <div className="filter-group">
                                     <form>
                                         <div className="filter-area">
