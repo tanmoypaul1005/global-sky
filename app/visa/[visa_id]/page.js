@@ -360,6 +360,7 @@ const VisaDetails = () => {
                     </div>
                 </div>
             </div>
+
             <div
                 style={{ display: 'none' }}
                 className="my-template">
@@ -397,7 +398,6 @@ const VisaDetails = () => {
                 </div>
             </div>
 
-
             <div className="visa-apply-section mb-50">
                 <div className="container">
                     <div className="row">
@@ -418,7 +418,6 @@ const VisaDetails = () => {
                     </div>
                 </div>
             </div>
-
 
             <div className="visa-details-section mb-90">
                 <div className="container">
@@ -529,7 +528,7 @@ const VisaDetails = () => {
                                             </div>
                                             <div className="content">
                                                 <div className="accordion" id="accordionGeneral">
-                                                    {accordionData.map((item, index) => (
+                                                    {accordionData?.map((item, index) => (
                                                         <div className="accordion-item" key={index}>
                                                             <h2
                                                                 onClick={() => { 
@@ -749,9 +748,8 @@ const VisaDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div> */}
-
-
+                                        </div> 
+                                        */}
 
                                         <div className="single-information-wrap mb-40">
                                             <div className="title">
