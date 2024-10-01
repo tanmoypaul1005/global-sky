@@ -11,6 +11,8 @@ const VisaDetails = () => {
 
     const [currentStep, setCurrentStep] = useState("details");
 
+    const [showModal, setShowModal] = useState(false);
+
     const [selectIndex, setSelectIndex] = useState(null);
 
     const [isClient, setIsClient] = useState(false);
@@ -372,7 +374,7 @@ const VisaDetails = () => {
                     </div>
                 </div>
             </div> */}
-            <ApplyModal/>
+            <ApplyModal show={showModal} setShowModal={setShowModal} />
             <div
                 style={{ display: 'none' }}
                 className="my-template">
@@ -422,7 +424,7 @@ const VisaDetails = () => {
                                     <h5>Tourist Visa</h5>
                                     <p>We understand your needs and deliver digital marketing through unique selling offer that
                                         our country specialists oneto proposition.</p>
-                                    <button className="primary-btn1" data-bs-toggle="modal" data-bs-target="#visa-apply-modal">Apply
+                                    <button onClick={()=>{setShowModal(true)}} className="primary-btn1" data-bs-toggle="modal" data-bs-target="#visa-apply-modal">Apply
                                         Now</button>
                                 </div>
                             </div>

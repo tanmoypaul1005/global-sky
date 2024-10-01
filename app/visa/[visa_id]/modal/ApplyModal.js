@@ -1,17 +1,20 @@
 
 import React from 'react'
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 
-const ApplyModal = ({ show, handleClose, title, children }) => {
+const ApplyModal = ({ show, setShowModal }) => {
+
+    const handleClose = () => setShowModal(false);
+
     return (
         <div>
-            <Modal size="lg" show={true} dialogClassName="" onHide={handleClose}>
-
+            <Modal size="lg" show={show} dialogClassName="" onHide={handleClose}>
+               
                 <div style={{ display: "block", paddingLeft: "0px" }} className="modal fade visa-apply-modal show" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content form-wapper">
-                            <button type="button" className="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            <button onClick={handleClose} type="button" className="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
                                 className="bi bi-x-circle"></i></button>
                             <div className="modal-header">
                                 <ul className="visa-form-step" id="progressbar">
@@ -226,6 +229,7 @@ const ApplyModal = ({ show, handleClose, title, children }) => {
                         </div>
                     </div>
                 </div>
+              
             </Modal>
         </div>
     )
