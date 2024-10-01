@@ -8,6 +8,9 @@ const VisaDetails = () => {
 
     const [currentStep, setCurrentStep] = useState("details");
 
+    const [selectIndex, setSelectIndex] = useState(null);
+    
+
     return (
         <body className="backgraound-color">
             <CommonHeader />
@@ -406,6 +409,9 @@ const VisaDetails = () => {
                                                 </div>
                                             </div>
                                         </div>
+
+
+                                        
                                         <div className="single-information-wrap mb-40">
                                             <div className="title">
                                                 <h6>Documents Requirements</h6>
