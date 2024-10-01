@@ -121,7 +121,7 @@ const VisaDetails = () => {
             ]
         }
     ];
-    
+
 
     return (
         <body className="backgraound-color">
@@ -523,7 +523,59 @@ const VisaDetails = () => {
                                         </div>
 
 
+                                        <div className="single-information-wrap mb-40">
+                                            <div className="title">
+                                                <h6>Documents Requirements</h6>
+                                            </div>
+                                            <div className="content">
+                                                <div className="accordion" id="accordionGeneral">
+                                                    {accordionData.map((item, index) => (
+                                                        <div className="accordion-item" key={index}>
+                                                            <h2
+                                                                onClick={() => { 
+                                                                    if(selectIndex === index) {
+                                                                        setSelectIndex(null)
+                                                                        return
+                                                                    }
+                                                                    setSelectIndex(index) 
+                                                                }
+                                                                }
+                                                                className="accordion-header" id={item.id}>
+                                                                <button className="accordion-button" type="button"
+                                                                    data-bs-toggle="collapse" data-bs-target={item.target}
+                                                                    aria-expanded="true" aria-controls={item.target.substring(1)}>
+                                                                    {item.title}
+                                                                </button>
+                                                            </h2>
+                                                            <div id={item.target.substring(1)} className={`accordion-collapse collapse ${selectIndex === index && "show"}`}
+                                                                aria-labelledby={item.id} data-bs-parent="#accordionGeneral">
+                                                                <div className="accordion-body">
+                                                                    {item.content.map((doc, docIndex) => (
+                                                                        <div className="single-document" key={docIndex}>
+                                                                            <div className="number">
+                                                                                {doc.number}
+                                                                            </div>
+                                                                            <div className="doc-content">
+                                                                                <h6>{doc.title}</h6>
+                                                                                <p>{doc.description}</p>
+                                                                                <ul>
+                                                                                    {doc.list.map((listItem, listIndex) => (
+                                                                                        <li key={listIndex}>{listItem}</li>
+                                                                                    ))}
+                                                                                </ul>
+                                                                                {doc.note && <p>{doc.note}</p>}
+                                                                            </div>
+                                                                        </div>
+                                                                    ))}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                        {/* 
                                         <div className="single-information-wrap mb-40">
                                             <div className="title">
                                                 <h6>Documents Requirements</h6>
@@ -697,7 +749,10 @@ const VisaDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
+
+
+
                                         <div className="single-information-wrap mb-40">
                                             <div className="title">
                                                 <h6>Processing Time</h6>
@@ -885,6 +940,3 @@ const VisaDetails = () => {
 }
 
 export default VisaDetails
-
-
-
