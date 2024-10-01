@@ -1,7 +1,7 @@
 "use client"
 import React, { useState ,useEffect} from 'react'
 import CommonHeader from '@/app/components/header/CommonHeader'
-import { iFlagImage, iVisaScreenshot } from '@/util/imageImports'
+import { iAlart, iFlagImage, iVisaScreenshot } from '@/util/imageImports'
 import Image from 'next/image'
 import CommonModal from '@/app/components/modal/CommonModal'
 import Footer from '@/app/components/Footer'
@@ -885,7 +885,7 @@ const VisaDetails = () => {
                                     <div className="content">
                                         <h5>U.A.E Electronic visa (MALE) - MUST FLY VIA EMIRATES Type: E-Visa</h5>
                                         <ul>
-                                            <li>
+                                            <li style={{marginLeft:"-30px"}}>
                                                 <span>Validity</span>
                                                 <h6>60 Days</h6>
                                             </li>
@@ -895,7 +895,7 @@ const VisaDetails = () => {
                                             </li>
                                         </ul>
                                         <h6>AED 799 / <span>Person</span></h6>
-                                        <span><img src="assets/image/alart.svg" alt="" /> Visa issuance rights reserved by the embassy</span>
+                                        <span><Image src={iAlart} alt="" /> Visa issuance rights reserved by the embassy</span>
                                     </div>
                                     <button>SELECT OFFER</button>
                                 </div>
@@ -904,7 +904,7 @@ const VisaDetails = () => {
                                     <div className="content">
                                         <h5>Electronic visa 5 years multiple entry Type: E-Visa</h5>
                                         <ul>
-                                            <li>
+                                            <li style={{marginLeft:"-30px"}}>
                                                 <span>Validity</span>
                                                 <h6>1825 Days</h6>
                                             </li>
@@ -914,7 +914,7 @@ const VisaDetails = () => {
                                             </li>
                                         </ul>
                                         <h6>AED 5990 / <span>Person</span></h6>
-                                        <span><img src="assets/image/alart.svg" alt="" /> Visa issuance rights reserved by the embassy</span>
+                                        <span><Image src={iAlart} alt="" /> Visa issuance rights reserved by the embassy</span>
                                     </div>
                                     <button>SELECT OFFER</button>
                                 </div>

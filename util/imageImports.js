@@ -82,5 +82,7 @@ export { default as iAttraction5} from "@/app/image/attraction-05.png";
 
 export { default as iVisaScreenshot} from "@/app/image/document-img.png";
 
+export { default as iAlart} from "@/app/image/alart.svg";
+
 
                                                                                                    
