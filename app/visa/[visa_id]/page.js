@@ -538,14 +538,14 @@ const VisaDetails = () => {
                                                                         return
                                                                     }
                                                                     setSelectIndex(index) 
-                                                                }
-                                                                }
+                                                                }}
                                                                 className="accordion-header" id={item.id}>
-                                                                <button className="accordion-button" type="button"
+                                                                <button className={`accordion-button ${selectIndex !== index  && "collapsed"} `} type="button"
                                                                     data-bs-toggle="collapse" data-bs-target={item.target}
                                                                     aria-expanded="true" aria-controls={item.target.substring(1)}>
                                                                     {item.title}
                                                                 </button>
+                                                                
                                                             </h2>
                                                             <div id={item.target.substring(1)} className={`accordion-collapse collapse ${selectIndex === index && "show"}`}
                                                                 aria-labelledby={item.id} data-bs-parent="#accordionGeneral">
