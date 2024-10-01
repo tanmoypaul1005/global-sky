@@ -461,210 +461,7 @@ const Service = () => {
                                                     }
                                                 />
 
-                                                {/* <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
-                                                    <div className="single-search-box">
-                                                        <div className="icon">
-                                                            <svg width="24" height="24" viewBox="0 0 24 24"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M16.0067 15.8571C18.5606 11.8496 18.2395 12.3496 18.3131 12.2451C19.2429 10.9336 19.7344 9.39009 19.7344 7.78125C19.7344 3.51469 16.2721 0 12 0C7.74178 0 4.26562 3.50775 4.26562 7.78125C4.26562 9.38906 4.76737 10.973 5.72766 12.3022L7.99322 15.8572C5.57095 16.2294 1.45312 17.3387 1.45312 19.7812C1.45312 20.6716 2.03428 21.9405 4.80291 22.9293C6.73612 23.6197 9.29208 24 12 24C17.0637 24 22.5469 22.5716 22.5469 19.7812C22.5469 17.3383 18.4339 16.2301 16.0067 15.8571ZM6.9023 11.5287C6.89457 11.5166 6.88649 11.5047 6.87806 11.4931C6.07898 10.3938 5.67188 9.09098 5.67188 7.78125C5.67188 4.26478 8.50341 1.40625 12 1.40625C15.4893 1.40625 18.3281 4.26605 18.3281 7.78125C18.3281 9.09309 17.9287 10.3517 17.1728 11.4221C17.1051 11.5114 17.4585 10.9624 12 19.5276L6.9023 11.5287ZM12 22.5938C6.46903 22.5938 2.85938 20.968 2.85938 19.7812C2.85938 18.9836 4.71413 17.6721 8.82413 17.1609L11.407 21.2138C11.4705 21.3135 11.5582 21.3956 11.6618 21.4525C11.7654 21.5093 11.8817 21.5391 12 21.5391C12.1182 21.5391 12.2345 21.5093 12.3381 21.4525C12.4417 21.3956 12.5294 21.3135 12.5929 21.2138L15.1757 17.1609C19.2858 17.6721 21.1406 18.9836 21.1406 19.7812C21.1406 20.9579 17.5635 22.5938 12 22.5938Z" />
-                                                                <path
-                                                                    d="M12 4.26562C10.0615 4.26562 8.48438 5.84273 8.48438 7.78125C8.48438 9.71977 10.0615 11.2969 12 11.2969C13.9385 11.2969 15.5156 9.71977 15.5156 7.78125C15.5156 5.84273 13.9385 4.26562 12 4.26562ZM12 9.89062C10.8369 9.89062 9.89062 8.94436 9.89062 7.78125C9.89062 6.61814 10.8369 5.67188 12 5.67188C13.1631 5.67188 14.1094 6.61814 14.1094 7.78125C14.1094 8.94436 13.1631 9.89062 12 9.89062Z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div className="searchbox-input">
-                                                            <label>Form</label>
-                                                            <div className="custom-select-dropdown">
-                                                                <div className="select-input">
-                                                                    <input type="text" readonly value="Bangladesh" />
-                                                                    <i className="bi bi-chevron-down"></i>
-                                                                </div>
-                                                                <div className="custom-select-wrap">
-                                                                    <div className="custom-select-search-area">
-                                                                        <i className='bi bi-search'></i>
-                                                                        <input type="text" placeholder="Type Your Destination" />
-                                                                    </div>
-                                                                    <ul className="option-list">
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Bangladesh</h6>
-                                                                                <p>Dhaka, Cox Bazar, Sylhet</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>50  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Nepal</h6>
-                                                                                <p>KATHMANDU, POKHARA</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>30  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>India</h6>
-                                                                                <p>Delhi, Agra, Himachal</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>30  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Brazil</h6>
-                                                                                <p>Sao Paulo, Salvador, Bonito</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>20  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Thailand</h6>
-                                                                                <p>Bangkok, Phuket, Trang</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>40  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Span</h6>
-                                                                                <p>Barcelona, Madrid</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>20  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Dubai</h6>
-                                                                                <p>Abu Dhabi, Burj Khalifa</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>35  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>United States</h6>
-                                                                                <p>New York, Las Vegas, Colorado</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>45  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> */}
-                                                {/* <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
-                                                    <div className="single-search-box">
-                                                        <div className="icon">
-                                                            <svg width="24" height="24" viewBox="0 0 24 24"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M16.0067 15.8571C18.5606 11.8496 18.2395 12.3496 18.3131 12.2451C19.2429 10.9336 19.7344 9.39009 19.7344 7.78125C19.7344 3.51469 16.2721 0 12 0C7.74178 0 4.26562 3.50775 4.26562 7.78125C4.26562 9.38906 4.76737 10.973 5.72766 12.3022L7.99322 15.8572C5.57095 16.2294 1.45312 17.3387 1.45312 19.7812C1.45312 20.6716 2.03428 21.9405 4.80291 22.9293C6.73612 23.6197 9.29208 24 12 24C17.0637 24 22.5469 22.5716 22.5469 19.7812C22.5469 17.3383 18.4339 16.2301 16.0067 15.8571ZM6.9023 11.5287C6.89457 11.5166 6.88649 11.5047 6.87806 11.4931C6.07898 10.3938 5.67188 9.09098 5.67188 7.78125C5.67188 4.26478 8.50341 1.40625 12 1.40625C15.4893 1.40625 18.3281 4.26605 18.3281 7.78125C18.3281 9.09309 17.9287 10.3517 17.1728 11.4221C17.1051 11.5114 17.4585 10.9624 12 19.5276L6.9023 11.5287ZM12 22.5938C6.46903 22.5938 2.85938 20.968 2.85938 19.7812C2.85938 18.9836 4.71413 17.6721 8.82413 17.1609L11.407 21.2138C11.4705 21.3135 11.5582 21.3956 11.6618 21.4525C11.7654 21.5093 11.8817 21.5391 12 21.5391C12.1182 21.5391 12.2345 21.5093 12.3381 21.4525C12.4417 21.3956 12.5294 21.3135 12.5929 21.2138L15.1757 17.1609C19.2858 17.6721 21.1406 18.9836 21.1406 19.7812C21.1406 20.9579 17.5635 22.5938 12 22.5938Z" />
-                                                                <path
-                                                                    d="M12 4.26562C10.0615 4.26562 8.48438 5.84273 8.48438 7.78125C8.48438 9.71977 10.0615 11.2969 12 11.2969C13.9385 11.2969 15.5156 9.71977 15.5156 7.78125C15.5156 5.84273 13.9385 4.26562 12 4.26562ZM12 9.89062C10.8369 9.89062 9.89062 8.94436 9.89062 7.78125C9.89062 6.61814 10.8369 5.67188 12 5.67188C13.1631 5.67188 14.1094 6.61814 14.1094 7.78125C14.1094 8.94436 13.1631 9.89062 12 9.89062Z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div className="searchbox-input">
-                                                            <label>To</label>
-                                                            <div className="custom-select-dropdown">
-                                                                <div className="select-input">
-                                                                    <input type="text" readonly value="Bangladesh" />
-                                                                    <i className="bi bi-chevron-down"></i>
-                                                                </div>
-                                                                <div className="custom-select-wrap">
-                                                                    <div className="custom-select-search-area">
-                                                                        <i className='bi bi-search'></i>
-                                                                        <input type="text" placeholder="Type Your Destination" />
-                                                                    </div>
-                                                                    <ul className="option-list">
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Bangladesh</h6>
-                                                                                <p>Dhaka, Cox s Bazar, Sylhet</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>50  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Nepal</h6>
-                                                                                <p>KATHMANDU, POKHARA</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>30  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>India</h6>
-                                                                                <p>Delhi, Agra, Himachal</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>30  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Brazil</h6>
-                                                                                <p>Sao Paulo, Salvador, Bonito</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>20  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Thailand</h6>
-                                                                                <p>Bangkok, Phuket, Trang</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>40  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Span</h6>
-                                                                                <p>Barcelona, Madrid</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>20  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Dubai</h6>
-                                                                                <p>Abu Dhabi, Burj Khalifa</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>35  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>United States</h6>
-                                                                                <p>New York, Las Vegas, Colorado</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>45  <br></br> Tour</span>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> */}
+
                                                 <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
                                                     <div className="single-search-box">
                                                         <div className="icon">
@@ -689,7 +486,67 @@ const Service = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
+
+                                                <ServiceDropdown
+                                                    laval='travelers'
+                                                    value="Nepal"
+                                                    normalValue={
+                                                        <h6><span id="adult-qty">1</span> Adults, <span
+                                                            id="child-qty">0</span>
+                                                            Child</h6>}
+                                                    icon={<>
+                                                        <svg width="23" height="23" viewBox="0 0 23 23"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M17.7906 8.10323C17.7906 6.85913 17.4216 5.64296 16.7305 4.60853C16.0393 3.57409 15.0569 2.76785 13.9075 2.29175C12.7581 1.81565 11.4933 1.69108 10.2731 1.9338C9.05289 2.17651 7.93206 2.7756 7.05235 3.65532C6.17264 4.53503 5.57354 5.65586 5.33083 6.87605C5.08812 8.09625 5.21269 9.36102 5.68878 10.5104C6.16488 11.6598 6.97113 12.6422 8.00556 13.3334C9.04 14.0246 10.2562 14.3935 11.5003 14.3935C13.1681 14.392 14.7672 13.7288 15.9465 12.5495C17.1258 11.3701 17.789 9.77106 17.7906 8.10323ZM6.03115 8.10323C6.03115 7.02154 6.35191 5.96415 6.95286 5.06475C7.55382 4.16536 8.40798 3.46437 9.40733 3.05043C10.4067 2.63649 11.5063 2.52818 12.5672 2.73921C13.6281 2.95023 14.6026 3.47111 15.3675 4.23598C16.1324 5.00085 16.6533 5.97536 16.8643 7.03626C17.0753 8.09716 16.967 9.19682 16.5531 10.1962C16.1391 11.1955 15.4381 12.0497 14.5387 12.6506C13.6393 13.2516 12.582 13.5723 11.5003 13.5723C10.05 13.5715 8.65945 12.995 7.63398 11.9695C6.60851 10.944 6.03202 9.55346 6.03115 8.10323Z" />
+                                                            <path
+                                                                d="M15.0445 17.25C16.2229 15.4603 17.4539 13.6134 17.7988 13.1905C19.1044 11.5748 19.7388 9.51891 19.5706 7.44843C19.4025 5.37795 18.4447 3.45139 16.8955 2.06751C16.0457 1.3011 15.0419 0.725121 13.9514 0.378141C12.8609 0.031162 11.7088 -0.0788086 10.5724 0.0555942C7.04945 0.449764 3.78523 3.76326 3.44444 7.29437C3.23207 9.3913 3.84801 11.4882 5.16072 13.1371C5.56721 13.6504 6.79899 15.4775 7.96508 17.2472L7.9659 17.2484C5.65631 17.6512 3.40338 18.5459 3.40338 19.9817C3.40338 21.9423 7.57501 23 11.5003 23C15.4256 23 19.5972 21.9423 19.5972 19.9821C19.5972 18.5438 17.3513 17.6516 15.0445 17.25ZM5.80535 12.628C4.62449 11.1448 4.07042 9.2586 4.26152 7.37238C4.56125 4.25597 7.55448 1.22168 10.6627 0.872676C10.9437 0.843408 11.226 0.828334 11.5085 0.827511C13.2963 0.820954 15.0224 1.48121 16.3494 2.67929C17.112 3.36238 17.7221 4.19838 18.1402 5.13289C18.5583 6.0674 18.7749 7.07947 18.776 8.10324C18.7832 9.76808 18.2113 11.3836 17.1583 12.6731C16.7641 13.1618 15.3024 15.3502 14.0213 17.3005L14.002 17.3305C13.9955 17.34 13.9889 17.349 13.9836 17.3593L13.9762 17.3703C12.9045 19.0004 11.9684 20.4416 11.8821 20.573C11.8393 20.6339 11.7824 20.6836 11.7163 20.7179C11.6502 20.7522 11.5768 20.7701 11.5023 20.7701C11.4279 20.7701 11.3545 20.7522 11.2884 20.7179C11.2223 20.6836 11.1654 20.6339 11.1225 20.573C10.9419 20.2938 6.67581 13.7202 5.80535 12.628ZM11.5003 22.1788C6.99238 22.1788 4.22457 20.8994 4.22457 19.9821C4.22457 19.3018 5.68176 18.417 8.46272 17.9998C9.51794 19.6089 10.4163 20.9918 10.4327 21.0205C10.5484 21.1983 10.7066 21.3443 10.8931 21.4455C11.0795 21.5466 11.2882 21.5995 11.5003 21.5995C11.7124 21.5995 11.9211 21.5466 12.1075 21.4455C12.2939 21.3443 12.4522 21.1983 12.5678 21.0205C12.5884 20.9918 13.4904 19.6056 14.5448 18.0014C17.293 18.4133 18.776 19.3166 18.776 19.9817C18.776 20.8994 16.0082 22.1788 11.5003 22.1788Z" />
+                                                            <path
+                                                                d="M14.346 11.7082C14.4548 11.7079 14.559 11.6646 14.636 11.5876C14.7129 11.5107 14.7563 11.4065 14.7566 11.2977V8.19356L14.9311 8.34097C15.0144 8.4112 15.1222 8.44547 15.2308 8.43623C15.2845 8.43166 15.3369 8.41654 15.3848 8.39174C15.4327 8.36694 15.4752 8.33294 15.51 8.2917C15.5448 8.25045 15.5711 8.20275 15.5875 8.15133C15.6038 8.09992 15.6099 8.04578 15.6053 7.99202C15.6007 7.93826 15.5856 7.88593 15.5608 7.83801C15.536 7.7901 15.502 7.74754 15.4608 7.71276L11.7654 4.5943C11.6913 4.53177 11.5975 4.49747 11.5006 4.49747C11.4036 4.49747 11.3098 4.53177 11.2357 4.5943L9.81303 5.79487V4.90717C9.81303 4.79827 9.76977 4.69384 9.69277 4.61683C9.61577 4.53983 9.51133 4.49657 9.40244 4.49657C9.29354 4.49657 9.1891 4.53983 9.1121 4.61683C9.0351 4.69384 8.99184 4.79827 8.99184 4.90717V6.48796L7.54039 7.71317C7.45714 7.78341 7.4052 7.88384 7.396 7.99237C7.3868 8.10091 7.42109 8.20865 7.49133 8.2919C7.56157 8.37515 7.662 8.42709 7.77053 8.43629C7.87906 8.44549 7.98681 8.4112 8.07006 8.34097L8.24456 8.19356V11.2977C8.24489 11.4065 8.28825 11.5107 8.36518 11.5876C8.44211 11.6646 8.54636 11.7079 8.65516 11.7082H14.346ZM9.06493 7.50089L9.69273 6.97122L11.5006 5.44546L13.9362 7.50089L13.9354 7.50377V10.8871H12.6831V10.1808C12.6831 10.0255 12.6525 9.87178 12.5931 9.72831C12.5336 9.58484 12.4465 9.45448 12.3367 9.34468C12.2269 9.23487 12.0966 9.14777 11.9531 9.08834C11.8096 9.02891 11.6559 8.99833 11.5006 8.99833C11.3453 8.99833 11.1915 9.02891 11.048 9.08834C10.9046 9.14777 10.7742 9.23487 10.6644 9.34468C10.5546 9.45448 10.4675 9.58484 10.4081 9.72831C10.3486 9.87178 10.3181 10.0255 10.3181 10.1808V10.8871H9.06575V7.50377L9.06493 7.50089Z" />
+                                                        </svg>
+                                                    </>}
+
+                                                    content={
+                                                        <div className="custom-select-wrap active two no-scroll">
+                                                            <ul className="guest-count">
+                                                                <li className="single-item">
+                                                                    <div className="title">
+                                                                        <h6>Adult</h6>
+                                                                        <span>17 years+</span>
+                                                                    </div>
+                                                                    <div className="quantity-counter">
+                                                                        <a href="#" data-type="adult"
+                                                                            className="guest-quantity__minus"><i
+                                                                                className="bi bi-dash"></i></a>
+                                                                        <input name="adult_quantity" type="text"
+                                                                            className="quantity__input" value="1" />
+                                                                        <a href="#" data-type="adult"
+                                                                            className="guest-quantity__plus"><i
+                                                                                className="bi bi-plus"></i></a>
+                                                                    </div>
+                                                                </li>
+                                                                <li className="single-item">
+                                                                    <div className="title">
+                                                                        <h6>Children</h6>
+                                                                        <span>0-17 years</span>
+                                                                    </div>
+                                                                    <div className="quantity-counter">
+                                                                        <a href="#" data-type="child"
+                                                                            className="guest-quantity__minus"><i
+                                                                                className="bi bi-dash"></i></a>
+                                                                        <input name="child_quantity" type="text"
+                                                                            className="quantity__input" value="0" />
+                                                                        <a href="#" data-type="child"
+                                                                            className="guest-quantity__plus"><i
+                                                                                className="bi bi-plus"></i></a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    }
+                                                />
+
+                                                {/* <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
                                                     <div className="single-search-box">
                                                         <div className="icon">
                                                             <svg width="23" height="23" viewBox="0 0 23 23"
@@ -750,7 +607,7 @@ const Service = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <button type="submit">
@@ -875,120 +732,13 @@ const Service = () => {
                                                         </div>
                                                     }
                                                 />
-                                                {/* <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
-                                                    <div className="single-search-box">
-                                                        <div className="icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
-                                                                viewBox="0 0 27 27">
-                                                                <path
-                                                                    d="M18.0075 17.8392C20.8807 13.3308 20.5195 13.8933 20.6023 13.7757C21.6483 12.3003 22.2012 10.5639 22.2012 8.75391C22.2012 3.95402 18.3062 0 13.5 0C8.7095 0 4.79883 3.94622 4.79883 8.75391C4.79883 10.5627 5.3633 12.3446 6.44361 13.8399L8.99237 17.8393C6.26732 18.2581 1.63477 19.506 1.63477 22.2539C1.63477 23.2556 2.28857 24.6831 5.40327 25.7955C7.57814 26.5722 10.4536 27 13.5 27C19.1966 27 25.3652 25.3931 25.3652 22.2539C25.3652 19.5055 20.7381 18.2589 18.0075 17.8392ZM7.76508 12.9698C7.75639 12.9562 7.7473 12.9428 7.73782 12.9298C6.83886 11.6931 6.38086 10.2274 6.38086 8.75391C6.38086 4.79788 9.56633 1.58203 13.5 1.58203C17.4255 1.58203 20.6191 4.7993 20.6191 8.75391C20.6191 10.2297 20.1698 11.6457 19.3195 12.8498C19.2432 12.9503 19.6408 12.3327 13.5 21.9686L7.76508 12.9698ZM13.5 25.418C7.27766 25.418 3.2168 23.589 3.2168 22.2539C3.2168 21.3566 5.30339 19.8811 9.92714 19.306L12.8329 23.8656C12.9044 23.9777 13.0029 24.0701 13.1195 24.134C13.2361 24.198 13.367 24.2315 13.4999 24.2315C13.6329 24.2315 13.7638 24.198 13.8804 24.134C13.9969 24.0701 14.0955 23.9777 14.167 23.8656L17.0727 19.306C21.6966 19.8811 23.7832 21.3566 23.7832 22.2539C23.7832 23.5776 19.7589 25.418 13.5 25.418Z" />
-                                                                <path
-                                                                    d="M13.5 4.79883C11.3192 4.79883 9.54492 6.57308 9.54492 8.75391C9.54492 10.9347 11.3192 12.709 13.5 12.709C15.6808 12.709 17.4551 10.9347 17.4551 8.75391C17.4551 6.57308 15.6808 4.79883 13.5 4.79883ZM13.5 11.127C12.1915 11.127 11.127 10.0624 11.127 8.75391C11.127 7.44541 12.1915 6.38086 13.5 6.38086C14.8085 6.38086 15.873 7.44541 15.873 8.75391C15.873 10.0624 14.8085 11.127 13.5 11.127Z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div className="searchbox-input">
-                                                            <label>Location</label>
-                                                            <div className="custom-select-dropdown">
-                                                                <div className="select-input">
-                                                                    <input type="text" readonly value="Dubai" />
-                                                                    <i className="bi bi-chevron-down"></i>
-                                                                </div>
-                                                                <div className="custom-select-wrap">
-                                                                    <div className="custom-select-search-area">
-                                                                        <i className='bx bx-search'></i>
-                                                                        <input type="text" placeholder="Type Your Destination" />
-                                                                    </div>
-                                                                    <ul className="option-list">
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Dubai</h6>
-                                                                                <p>United Arab Emirates</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>AE</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>{`Cox's Bazar`}</h6>
-                                                                                <p>Bangladesh</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>BD</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>KATHMANDU</h6>
-                                                                                <p>Nepal</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>NP</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Delhi</h6>
-                                                                                <p>India</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>IN</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Sao Paulo</h6>
-                                                                                <p>Brazil</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>BR</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Bangkok</h6>
-                                                                                <p>Thailand</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>TH</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Barcelona</h6>
-                                                                                <p>Spain</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>ES</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>Abu Dhabi</h6>
-                                                                                <p>United Arab Emirates</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>AE</span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div className="destination">
-                                                                                <h6>New York</h6>
-                                                                                <p>United States</p>
-                                                                            </div>
-                                                                            <div className="tour">
-                                                                                <span>US</span>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> */}
-                                                <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
-                                                    <div className="single-search-box">
-                                                        <div className="icon">
+
+
+                                                <ServiceDropdown
+                                                    laval='Check in - Check out'
+                                                    value="Sep 12 - Sep 20"
+                                                    icon={
+                                                        <>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                                                 viewBox="0 0 23 23">
                                                                 <g clip-path="url(#clip0_2037_326)">
@@ -998,35 +748,30 @@ const Service = () => {
                                                                         d="M11.5 0C5.15851 0 0 5.15851 0 11.5C0 17.8415 5.15851 23 11.5 23C17.8415 23 23 17.8415 23 11.5C23 5.15851 17.8415 0 11.5 0ZM11.5 21.2184C6.14194 21.2184 1.78156 16.8581 1.78156 11.5C1.78156 6.14194 6.14194 1.78156 11.5 1.78156C16.859 1.78156 21.2184 6.14194 21.2184 11.5C21.2184 16.8581 16.8581 21.2184 11.5 21.2184Z" />
                                                                 </g>
                                                             </svg>
+                                                        </>
+                                                    }
+
+                                                    content={
+                                                        <div className="custom-select-wrap two">
+                                                            <ul className="option-list">
+                                                                <li className="single-item">
+                                                                    <h6>Sep 12 - Sep 20</h6>
+                                                                </li>
+                                                                <li className="single-item">
+                                                                    <h6>Aug 04 - Aug 10</h6>
+                                                                </li>
+                                                                <li className="single-item">
+                                                                    <h6>Oct 15 - Oct 20</h6>
+                                                                </li>
+                                                                <li className="single-item">
+                                                                    <h6>Nov 18 - Nov 25</h6>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                        <div className="searchbox-input">
-                                                            <label>Check in - Check out</label>
-                                                            <div className="custom-select-dropdown">
-                                                                <div className="select-input">
-                                                                    <input type="text" name="daterange" readonly
-                                                                        value="Sep 12 - Sep 20" />
-                                                                    <i className="bi bi-chevron-down"></i>
-                                                                </div>
-                                                                <div className="custom-select-wrap two">
-                                                                    <ul className="option-list">
-                                                                        <li className="single-item">
-                                                                            <h6>Sep 12 - Sep 20</h6>
-                                                                        </li>
-                                                                        <li className="single-item">
-                                                                            <h6>Aug 04 - Aug 10</h6>
-                                                                        </li>
-                                                                        <li className="single-item">
-                                                                            <h6>Oct 15 - Oct 20</h6>
-                                                                        </li>
-                                                                        <li className="single-item">
-                                                                            <h6>Nov 18 - Nov 25</h6>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                    }
+                                                />
+
+
                                                 <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
                                                     <div className="single-search-box">
                                                         <div className="icon">
@@ -1055,66 +800,61 @@ const Service = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="col-xl-3 col-md-6 d-flex justify-content-center">
-                                                    <div className="single-search-box">
-                                                        <div className="icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
-                                                                viewBox="0 0 27 27">
-                                                                <g clip-path="url(#clip0_273_1754)">
-                                                                    <path
-                                                                        d="M13.3207 14.07C13.4615 14.163 13.6265 14.2126 13.7952 14.2127C14.0765 14.2127 14.3521 14.0761 14.5173 13.8238C14.7799 13.4251 14.6699 12.8893 14.2712 12.6268C12.4344 11.4175 11.4549 10.0781 11.189 8.413C11.0664 7.63051 11.2293 6.44276 11.8788 5.68373C12.3 5.19189 12.8555 4.95227 13.5776 4.95227C14.9937 4.95227 15.5731 5.95799 15.7926 6.55698C16.3228 8.00211 15.8852 9.80108 14.7761 10.7403C14.4116 11.0492 14.3666 11.5944 14.6745 11.958C14.9834 12.323 15.5281 12.3679 15.8922 12.0596C17.5541 10.6528 18.1943 8.0887 17.415 5.96263C16.787 4.2484 15.3522 3.22491 13.5775 3.22491C12.3552 3.22491 11.3134 3.6868 10.5651 4.56052C9.4864 5.82268 9.30716 7.56876 9.48218 8.68299C9.93995 11.5476 11.8924 13.1293 13.3207 14.07Z" />
-                                                                    <path d="M20.1255 22.0477H7.78708C7.81845 18.178 8.05759 17.0286 8.16475 16.7076C8.40062 16.0014 9.36979 15.275 10.2183 14.8006C10.9848 16.008 12.2021 16.7277 13.555 16.7277H13.5555C14.893 16.7272 16.0999 16.008 16.8628 14.801C17.7112 15.2756 18.679 16.0019 18.9144 16.7072C19.2186 17.6211 19.2013 18.9062 19.1873 19.9386C19.1845 20.1506 19.1816 20.3528 19.1816 20.5404C19.1816 21.0178 19.5682 21.4044 20.0455 21.4044C20.5229 21.4044 20.9095 21.0178 20.9095 20.5404C20.9095 20.3603 20.9123 20.166 20.915 19.962C20.9314 18.7991 20.9515 17.3521 20.5538 16.1601C19.9014 14.2048 17.1333 12.9862 16.8197 12.8538C16.714 12.8088 16.6003 12.7854 16.4853 12.7851C16.3704 12.7848 16.2565 12.8075 16.1505 12.8519C16.0445 12.8962 15.9485 12.9613 15.8679 13.0431C15.7873 13.125 15.7238 13.2221 15.6811 13.3287C15.2628 14.3747 14.4681 14.9995 13.5555 14.9995H13.5551C12.6378 14.9995 11.8123 14.3592 11.3995 13.3287C11.3568 13.2221 11.2933 13.125 11.2128 13.0431C11.1322 12.9613 11.0361 12.8963 10.9301 12.8519C10.8241 12.8076 10.7103 12.7849 10.5953 12.7853C10.4804 12.7856 10.3667 12.8089 10.2609 12.8538C9.94784 12.9862 7.17923 14.2044 6.52593 16.1606C6.21422 17.0965 6.05655 19.3681 6.05655 22.9113C6.05655 23.3886 6.44313 23.7752 6.92047 23.7752H20.1261C20.603 23.7752 20.9896 23.3891 20.9896 22.9118C20.9895 22.4343 20.6029 22.0477 20.1255 22.0477ZM5.3695 13.815C4.171 13.815 3.19618 12.5608 3.19618 11.0197C3.19618 9.48001 4.171 8.22724 5.3695 8.22724C5.98304 8.22724 6.59094 8.58197 6.95596 9.15243C7.22315 9.57034 7.58495 10.459 7.00463 11.7166C6.80478 12.1499 6.99387 12.6628 7.42723 12.8631C7.86106 13.0625 8.37352 12.8739 8.57332 12.4405C9.24909 10.9762 9.18966 9.43888 8.41048 8.22118C7.72069 7.14343 6.58393 6.49993 5.36903 6.49993C3.21817 6.49993 1.46835 8.52724 1.46835 11.0197C1.46835 13.5136 3.21817 15.5423 5.36903 15.5423C5.84636 15.5423 6.23342 15.1562 6.23342 14.6789C6.23337 14.2015 5.84684 13.815 5.3695 13.815ZM4.27767 21.2255H1.75991C1.7983 20.3701 1.87597 19.0981 2.01682 18.3503C2.19933 17.374 2.72444 16.8232 3.13296 16.533C3.52281 16.2569 3.61404 15.7178 3.33745 15.3289C3.06135 14.939 2.52268 14.8473 2.13331 15.1244C1.58578 15.5128 0.621729 16.4076 0.318939 18.0315C0.0680901 19.3639 0.00307088 21.9584 0.000223323 22.0679C-0.00239217 22.1831 0.0179889 22.2976 0.060174 22.4048C0.102359 22.512 0.165501 22.6097 0.245904 22.6922C0.326391 22.7746 0.422553 22.8401 0.528728 22.8848C0.634904 22.9294 0.748946 22.9524 0.86414 22.9524H4.27762C4.75496 22.9524 5.14154 22.5667 5.14154 22.0894C5.14159 21.6121 4.75501 21.2255 4.27767 21.2255ZM25.5327 11.0187C25.5327 8.52623 23.7829 6.49893 21.632 6.49893C20.4166 6.49893 19.2794 7.14195 18.5892 8.2197C17.81 9.43692 17.7501 10.9747 18.4249 12.439C18.6248 12.8719 19.1381 13.0619 19.571 12.8621C20.0039 12.6623 20.1939 12.1494 19.9941 11.716C19.4138 10.4581 19.7764 9.56986 20.0437 9.15191C20.4092 8.58144 21.0171 8.22671 21.6316 8.22671C22.8301 8.22671 23.8049 9.47953 23.8049 11.0192C23.8049 12.5602 22.8301 13.8145 21.6316 13.8145C21.1542 13.8145 20.7677 14.201 20.7677 14.6784C20.7677 15.1557 21.1542 15.5423 21.6316 15.5423C23.7819 15.5423 25.5322 13.5136 25.5327 11.0187ZM26.6811 18.0334C26.39 16.4624 25.4746 15.5769 24.9552 15.1894C24.5728 14.9049 24.0313 14.9825 23.7459 15.3649C23.4609 15.7473 23.5395 16.2892 23.9214 16.5742C24.3093 16.8634 24.8078 17.4053 24.9828 18.3511C25.1236 19.098 25.2013 20.3695 25.2397 21.2245H22.7215C22.2441 21.2245 21.8575 21.6111 21.8575 22.0885C21.8575 22.5658 22.2441 22.9524 22.7215 22.9524H26.1359C26.3685 22.9524 26.5912 22.8588 26.7545 22.6917C26.8349 22.6092 26.8979 22.5115 26.94 22.4043C26.9821 22.2971 27.0024 22.1826 26.9997 22.0674C26.997 21.9579 26.9324 19.3629 26.6811 18.0334Z" />
-                                                                </g>
-                                                            </svg>
+                                                <ServiceDropdown
+                                                    laval='Guest'
+                                                    value="Dubai"
+                                                    icon={<>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                                                            viewBox="0 0 27 27">
+                                                            <g clip-path="url(#clip0_273_1754)">
+                                                                <path
+                                                                    d="M13.3207 14.07C13.4615 14.163 13.6265 14.2126 13.7952 14.2127C14.0765 14.2127 14.3521 14.0761 14.5173 13.8238C14.7799 13.4251 14.6699 12.8893 14.2712 12.6268C12.4344 11.4175 11.4549 10.0781 11.189 8.413C11.0664 7.63051 11.2293 6.44276 11.8788 5.68373C12.3 5.19189 12.8555 4.95227 13.5776 4.95227C14.9937 4.95227 15.5731 5.95799 15.7926 6.55698C16.3228 8.00211 15.8852 9.80108 14.7761 10.7403C14.4116 11.0492 14.3666 11.5944 14.6745 11.958C14.9834 12.323 15.5281 12.3679 15.8922 12.0596C17.5541 10.6528 18.1943 8.0887 17.415 5.96263C16.787 4.2484 15.3522 3.22491 13.5775 3.22491C12.3552 3.22491 11.3134 3.6868 10.5651 4.56052C9.4864 5.82268 9.30716 7.56876 9.48218 8.68299C9.93995 11.5476 11.8924 13.1293 13.3207 14.07Z" />
+                                                                <path d="M20.1255 22.0477H7.78708C7.81845 18.178 8.05759 17.0286 8.16475 16.7076C8.40062 16.0014 9.36979 15.275 10.2183 14.8006C10.9848 16.008 12.2021 16.7277 13.555 16.7277H13.5555C14.893 16.7272 16.0999 16.008 16.8628 14.801C17.7112 15.2756 18.679 16.0019 18.9144 16.7072C19.2186 17.6211 19.2013 18.9062 19.1873 19.9386C19.1845 20.1506 19.1816 20.3528 19.1816 20.5404C19.1816 21.0178 19.5682 21.4044 20.0455 21.4044C20.5229 21.4044 20.9095 21.0178 20.9095 20.5404C20.9095 20.3603 20.9123 20.166 20.915 19.962C20.9314 18.7991 20.9515 17.3521 20.5538 16.1601C19.9014 14.2048 17.1333 12.9862 16.8197 12.8538C16.714 12.8088 16.6003 12.7854 16.4853 12.7851C16.3704 12.7848 16.2565 12.8075 16.1505 12.8519C16.0445 12.8962 15.9485 12.9613 15.8679 13.0431C15.7873 13.125 15.7238 13.2221 15.6811 13.3287C15.2628 14.3747 14.4681 14.9995 13.5555 14.9995H13.5551C12.6378 14.9995 11.8123 14.3592 11.3995 13.3287C11.3568 13.2221 11.2933 13.125 11.2128 13.0431C11.1322 12.9613 11.0361 12.8963 10.9301 12.8519C10.8241 12.8076 10.7103 12.7849 10.5953 12.7853C10.4804 12.7856 10.3667 12.8089 10.2609 12.8538C9.94784 12.9862 7.17923 14.2044 6.52593 16.1606C6.21422 17.0965 6.05655 19.3681 6.05655 22.9113C6.05655 23.3886 6.44313 23.7752 6.92047 23.7752H20.1261C20.603 23.7752 20.9896 23.3891 20.9896 22.9118C20.9895 22.4343 20.6029 22.0477 20.1255 22.0477ZM5.3695 13.815C4.171 13.815 3.19618 12.5608 3.19618 11.0197C3.19618 9.48001 4.171 8.22724 5.3695 8.22724C5.98304 8.22724 6.59094 8.58197 6.95596 9.15243C7.22315 9.57034 7.58495 10.459 7.00463 11.7166C6.80478 12.1499 6.99387 12.6628 7.42723 12.8631C7.86106 13.0625 8.37352 12.8739 8.57332 12.4405C9.24909 10.9762 9.18966 9.43888 8.41048 8.22118C7.72069 7.14343 6.58393 6.49993 5.36903 6.49993C3.21817 6.49993 1.46835 8.52724 1.46835 11.0197C1.46835 13.5136 3.21817 15.5423 5.36903 15.5423C5.84636 15.5423 6.23342 15.1562 6.23342 14.6789C6.23337 14.2015 5.84684 13.815 5.3695 13.815ZM4.27767 21.2255H1.75991C1.7983 20.3701 1.87597 19.0981 2.01682 18.3503C2.19933 17.374 2.72444 16.8232 3.13296 16.533C3.52281 16.2569 3.61404 15.7178 3.33745 15.3289C3.06135 14.939 2.52268 14.8473 2.13331 15.1244C1.58578 15.5128 0.621729 16.4076 0.318939 18.0315C0.0680901 19.3639 0.00307088 21.9584 0.000223323 22.0679C-0.00239217 22.1831 0.0179889 22.2976 0.060174 22.4048C0.102359 22.512 0.165501 22.6097 0.245904 22.6922C0.326391 22.7746 0.422553 22.8401 0.528728 22.8848C0.634904 22.9294 0.748946 22.9524 0.86414 22.9524H4.27762C4.75496 22.9524 5.14154 22.5667 5.14154 22.0894C5.14159 21.6121 4.75501 21.2255 4.27767 21.2255ZM25.5327 11.0187C25.5327 8.52623 23.7829 6.49893 21.632 6.49893C20.4166 6.49893 19.2794 7.14195 18.5892 8.2197C17.81 9.43692 17.7501 10.9747 18.4249 12.439C18.6248 12.8719 19.1381 13.0619 19.571 12.8621C20.0039 12.6623 20.1939 12.1494 19.9941 11.716C19.4138 10.4581 19.7764 9.56986 20.0437 9.15191C20.4092 8.58144 21.0171 8.22671 21.6316 8.22671C22.8301 8.22671 23.8049 9.47953 23.8049 11.0192C23.8049 12.5602 22.8301 13.8145 21.6316 13.8145C21.1542 13.8145 20.7677 14.201 20.7677 14.6784C20.7677 15.1557 21.1542 15.5423 21.6316 15.5423C23.7819 15.5423 25.5322 13.5136 25.5327 11.0187ZM26.6811 18.0334C26.39 16.4624 25.4746 15.5769 24.9552 15.1894C24.5728 14.9049 24.0313 14.9825 23.7459 15.3649C23.4609 15.7473 23.5395 16.2892 23.9214 16.5742C24.3093 16.8634 24.8078 17.4053 24.9828 18.3511C25.1236 19.098 25.2013 20.3695 25.2397 21.2245H22.7215C22.2441 21.2245 21.8575 21.6111 21.8575 22.0885C21.8575 22.5658 22.2441 22.9524 22.7215 22.9524H26.1359C26.3685 22.9524 26.5912 22.8588 26.7545 22.6917C26.8349 22.6092 26.8979 22.5115 26.94 22.4043C26.9821 22.2971 27.0024 22.1826 26.9997 22.0674C26.997 21.9579 26.9324 19.3629 26.6811 18.0334Z" />
+                                                            </g>
+                                                        </svg>
+                                                    </>}
+                                                    normalValue={<h6><span id="adult-qty">1</span> Adults, <span
+                                                        id="child-qty">0</span> Child</h6>}
+                                                    content={
+                                                        <div className="custom-select-wrap active two no-scroll">
+                                                            <ul className="guest-count">
+                                                                <li className="single-item">
+                                                                    <div className="title">
+                                                                        <h6>Adult</h6>
+                                                                        <span>17 years+</span>
+                                                                    </div>
+                                                                    <div className="quantity-counter">
+                                                                        <a href="#" data-type="adult"
+                                                                            className="guest-quantity__minus"><i
+                                                                                className="bi bi-dash"></i></a>
+                                                                        <input name="adult_quantity" type="text"
+                                                                            className="quantity__input" value="1" />
+                                                                        <a href="#" data-type="adult"
+                                                                            className="guest-quantity__plus"><i
+                                                                                className="bi bi-plus"></i></a>
+                                                                    </div>
+                                                                </li>
+                                                                <li className="single-item">
+                                                                    <div className="title">
+                                                                        <h6>Children</h6>
+                                                                        <span>0-17 years</span>
+                                                                    </div>
+                                                                    <div className="quantity-counter">
+                                                                        <a href="#" data-type="child"
+                                                                            className="guest-quantity__minus"><i
+                                                                                className="bi bi-dash"></i></a>
+                                                                        <input name="child_quantity" type="text"
+                                                                            className="quantity__input" value="0" />
+                                                                        <a href="#" data-type="child"
+                                                                            className="guest-quantity__plus"><i
+                                                                                className="bi bi-plus"></i></a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                        <div className="searchbox-input">
-                                                            <label>Guest</label>
-                                                            <div className="custom-select-dropdown">
-                                                                <div className="select-input">
-                                                                    <h6><span id="adult-qty">1</span> Adults, <span
-                                                                        id="child-qty">0</span> Child</h6>
-                                                                    <i className="bi bi-chevron-down"></i>
-                                                                </div>
-                                                                <div className="custom-select-wrap two no-scroll">
-                                                                    <ul className="guest-count">
-                                                                        <li className="single-item">
-                                                                            <div className="title">
-                                                                                <h6>Adult</h6>
-                                                                                <span>17 years+</span>
-                                                                            </div>
-                                                                            <div className="quantity-counter">
-                                                                                <a href="#" data-type="adult"
-                                                                                    className="guest-quantity__minus"><i
-                                                                                        className="bi bi-dash"></i></a>
-                                                                                <input name="adult_quantity" type="text"
-                                                                                    className="quantity__input" value="1" />
-                                                                                <a href="#" data-type="adult"
-                                                                                    className="guest-quantity__plus"><i
-                                                                                        className="bi bi-plus"></i></a>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li className="single-item">
-                                                                            <div className="title">
-                                                                                <h6>Children</h6>
-                                                                                <span>0-17 years</span>
-                                                                            </div>
-                                                                            <div className="quantity-counter">
-                                                                                <a href="#" data-type="child"
-                                                                                    className="guest-quantity__minus"><i
-                                                                                        className="bi bi-dash"></i></a>
-                                                                                <input name="child_quantity" type="text"
-                                                                                    className="quantity__input" value="0" />
-                                                                                <a href="#" data-type="child"
-                                                                                    className="guest-quantity__plus"><i
-                                                                                        className="bi bi-plus"></i></a>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                    }
+                                                />
+
                                             </div>
                                         </div>
                                         <button type="submit">

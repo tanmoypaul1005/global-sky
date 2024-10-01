@@ -1,7 +1,13 @@
 "use client"
-import React, { useState,useEffect,useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
-const ServiceDropdown = ({ value="",laval = "", icon = <></>, content = <></> }) => {
+const ServiceDropdown = ({
+    value = "",
+    laval = "",
+    icon = <></>,
+    content = <></>,
+    normalValue = null
+}) => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
@@ -34,7 +40,9 @@ const ServiceDropdown = ({ value="",laval = "", icon = <></>, content = <></> })
                     <label>{laval}</label>
                     <div className="custom-select-dropdown">
                         <div className="select-input" onClick={toggleDropdown}>
-                            <input type="text" readonly  value={value} />
+                            {
+                                normalValue ? normalValue : <input type="text" readonly value={value} />
+                            }
                             <i className="bi bi-chevron-down"></i>
                         </div>
                         {isDropdownOpen && (

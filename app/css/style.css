@@ -2629,6 +2629,7 @@ header.about-us .nav-right .mobile-menu-btn {
   align-items: center;
   justify-content: space-between;
   padding: 8px 10px;
+  margin-left: -30px;
   border-bottom: 1px solid #f5f4f4;
 }
 .package-search-filter-wrapper .filter-group form .filter-area .single-search-box .searchbox-input .custom-select-dropdown .custom-select-wrap.two .guest-count .single-item .title h6 {
