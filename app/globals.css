@@ -12,6 +12,8 @@ body {
   animation: showContent 2s forwards;
 }
 
+
+
 @keyframes showContent {
   0% {
     opacity: 0;

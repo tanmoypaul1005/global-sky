@@ -11,15 +11,25 @@ import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
 
 const AttractionDetails = () => {
-
     useEffect(() => {
         if (Fancybox) {
             Fancybox.bind("[data-fancybox]", {
-                // Custom options
+                Image: {
+                    fit: "contain",  // Options: 'cover', 'contain', 'inside', 'outside'
+                },
+                loop: true,
+                buttons: [
+                    "zoom",
+                    "slideShow",
+                    "fullScreen",
+                    "thumbs",
+                    "close"
+                ],
             });
         }
     }, []);
-
+    
+    
     return (
         <body className="backgraound-color">
 
