@@ -4,8 +4,7 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { iOfferBannerCard, iOfferBannerCard2 } from '@/util/imageImports';
 
