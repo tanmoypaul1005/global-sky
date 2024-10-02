@@ -1,19 +1,47 @@
 "use client"
+import React, { useEffect } from 'react'
 import CommonHeader from '@/app/components/header/CommonHeader'
 import { iAttraction1, iAttraction2, iAttraction3, iAttraction4, iAttraction5 } from '@/util/imageImports'
 import Image from 'next/image'
-import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JavaScript
+// import { Fancybox } from '@fancyapps/ui';
+// import '@fancyapps/ui/dist/fancybox/fancybox.css';
+
+
+// Dynamic import for Fancybox
+import dynamic from 'next/dynamic';
+const Fancybox = dynamic(() => import('@fancyapps/ui'), { ssr: false });
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
 
 const AttractionDetails = () => {
+    useEffect(() => {
+        if (Fancybox) {
+            Fancybox.bind("[data-fancybox]", {
+                Image: {
+                    fit: "contain",  // Options: 'cover', 'contain', 'inside', 'outside'
+                },
+                loop: true,
+                buttons: [
+                    "zoom",
+                    "slideShow",
+                    "fullScreen",
+                    "thumbs",
+                    "close"
+                ],
+            });
+        }
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []);
+    
+    
     return (
         <body className="backgraound-color">
-            
+
             <CommonHeader />
-            
+
             {/* <!-- Banner section strats here --> */}
             <div className="about-breadcrum-section mb-120">
                 <div className="container">
@@ -36,7 +64,7 @@ const AttractionDetails = () => {
                                     <div className="col-lg-6">
                                         <div className="gallery-img-wrap">
                                             <Image src={iAttraction1} alt="" />
-                                            <a data-fancybox="gallery-01" href="assets/image/attraction-01.png"><i
+                                            <a data-fancybox="gallery-01" href="/assets/image/attraction-01.png"><i
                                                 className="bi bi-eye"></i></a>
                                         </div>
                                     </div>
@@ -45,14 +73,14 @@ const AttractionDetails = () => {
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap">
                                                     <Image src={iAttraction2} alt="" />
-                                                    <a data-fancybox="gallery-01" href="assets/image/attraction-02.png"><i
+                                                    <a data-fancybox="gallery-01" href="/assets/image/attraction-02.png"><i
                                                         className="bi bi-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap">
                                                     <Image src={iAttraction3} alt="" />
-                                                    <a data-fancybox="gallery-01" href="assets/image/attraction-03.png"><i
+                                                    <a data-fancybox="gallery-01" href="/assets/image/attraction-03.png"><i
                                                         className="bi bi-eye"></i></a>
                                                 </div>
                                             </div>
@@ -77,11 +105,11 @@ const AttractionDetails = () => {
                         </div>
                     </div>
                     <div className="others-image-wrap d-none">
-                        <a href="assets/image/attraction-01.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
-                        <a href="assets/image/attraction-02.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
-                        <a href="assets/image/attraction-03.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
-                        <a href="assets/image/attraction-04.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
-                        <a href="assets/image/attraction-05.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-01.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-02.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-03.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-04.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-05.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
                     </div>
                     <div className="row g-xl-4 gy-5">
                         <div className="col-xl-8">
@@ -141,8 +169,8 @@ const AttractionDetails = () => {
                                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#tourPlan">
                                         <div className="accordion-body">
                                             <ul style={{
-                                    marginLeft: "-30px"
-                                }}>
+                                                marginLeft: "-30px"
+                                            }}>
                                                 <li><i className="bi bi-check-lg"></i> Passport or Emirates ID is mandatory to be carried.</li>
                                                 <li><i className="bi bi-check-lg"></i> <strong>Weight criteria :</strong> Guests weighing from 30 to 150 kgs will be allowed for the glass slide</li>
                                                 <li><i className="bi bi-check-lg"></i> <strong>Height criteria :</strong> Guests with height ranging from 120 cm to 200 cm will be allowed for the glass slide</li>
@@ -200,8 +228,8 @@ const AttractionDetails = () => {
                                         <h2>9.5</h2>
                                         <div className="review-wrap">
                                             <ul style={{
-                                    marginLeft: "-30px"
-                                }} className="star-list">
+                                                marginLeft: "-30px"
+                                            }} className="star-list">
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -263,7 +291,7 @@ const AttractionDetails = () => {
                                                                                         <span>Overall</span>
                                                                                     </li>
                                                                                     <li>
-                                                                                        <div  className="rating-container"
+                                                                                        <div className="rating-container"
                                                                                             data-rating="0">
                                                                                             <i
                                                                                                 className="bi bi-star-fill star-icon"></i>
@@ -379,7 +407,7 @@ const AttractionDetails = () => {
                                                             <span>Transport</span>
                                                             <ul style={{
                                                                 marginLeft: "-30px"
-                                                            }}className="star-list">
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>

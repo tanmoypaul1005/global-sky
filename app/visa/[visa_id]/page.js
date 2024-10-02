@@ -17,8 +17,10 @@ const VisaDetails = () => {
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
-      setIsClient(true);
+        setIsClient(true);
+        window.scrollTo(0, 0); // Scroll to the top of the page
     }, []);
+
   
     if (!isClient) {
       return null; // Render nothing on the server

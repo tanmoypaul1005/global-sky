@@ -16,7 +16,6 @@ const ClientSpeakSlider = () => {
             <Swiper
                 slidesPerView={2}
                 spaceBetween={30}
-                // centeredSlides={true}
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
@@ -39,7 +38,6 @@ const ClientSpeakSlider = () => {
                         spaceBetween: 30
                     }
                 }}
-                // navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
