@@ -13,27 +13,25 @@ const ApplyModal = ({ show, setShowModal }) => {
     const [currentStep, setCurrentStep] = useState(1)
 
     return (
-        <div>
-            <Modal size="lg" show={show} dialogClassName="" onHide={handleClose}>
+        <Modal size="lg" show={show} dialogClassName="" onHide={handleClose}>
+            <div style={{ display: "block", paddingLeft: "0px" }} className="modal fade visa-apply-modal show" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content form-wapper">
+                        <button onClick={handleClose} type="button" className="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            className="bi bi-x-circle"></i></button>
+                        <div className="modal-header">
+                            <ul className="visa-form-step" id="progressbar">
+                                <li className={`${currentStep === 1 && "processing"}`}>Step 1: Travel Date</li>
+                                <li className={`${currentStep === 2 && "processing"}`}>Step 2: Visa Type</li>
+                                <li className={`${currentStep === 3 && "processing"}`}>Step 3: Personal Info</li>
+                            </ul>
+                        </div>
 
-                <div style={{ display: "block", paddingLeft: "0px" }} className="modal fade visa-apply-modal show" id="visa-apply-modal" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="visa-apply-modalLabel" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog-centered">
-                        <div className="modal-content form-wapper">
-                            <button onClick={handleClose} type="button" className="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                className="bi bi-x-circle"></i></button>
-                            <div className="modal-header">
-                                <ul className="visa-form-step" id="progressbar">
-                                    <li className={`${currentStep === 1 && "processing"}`}>Step 1: Travel Date</li>
-                                    <li className={`${currentStep === 2 && "processing"}`}>Step 2: Visa Type</li>
-                                    <li className={`${currentStep === 3 && "processing"}`}>Step 3: Personal Info</li>
-                                </ul>
-                            </div>
-
-                            <div className="modal-body">
-                                <form id="msform" className="visa-form">
-                                    {
-                                    currentStep === 1 && 
+                        <div className="modal-body">
+                            <form id="msform" className="visa-form">
+                                {
+                                    currentStep === 1 &&
                                     <fieldset className="postcode active">
                                         <div className="row">
                                             <div className="col-lg-4 d-flex align-items-center">
@@ -63,14 +61,14 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                         <button onClick={()=>{setCurrentStep(2)}} className="next primary-btn1">Next <i className="bi bi-arrow-right"></i>
                                                         </button>
                                                     </div> */}
-                                                    <StepButton currentStep={currentStep}  setCurrentStep={setCurrentStep} />
+                                                    <StepButton currentStep={currentStep} setCurrentStep={setCurrentStep} />
                                                 </div>
                                             </div>
                                         </div>
                                     </fieldset>
-                                    }
-                                    {
-                                    currentStep === 2 && 
+                                }
+                                {
+                                    currentStep === 2 &&
                                     <fieldset className="postcode active">
                                         <div className="row">
                                             <div className="col-lg-4 d-flex align-items-center">
@@ -118,14 +116,14 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                         <button onClick={()=>{setCurrentStep(3)}} className="next primary-btn1">Next <i className="bi bi-arrow-right"></i>
                                                         </button>
                                                     </div> */}
-                                                     <StepButton currentStep={currentStep}  setCurrentStep={setCurrentStep} />
+                                                    <StepButton currentStep={currentStep} setCurrentStep={setCurrentStep} />
                                                 </div>
                                             </div>
                                         </div>
                                     </fieldset>
-                                    }
-                                    {
-                                    currentStep === 3 && 
+                                }
+                                {
+                                    currentStep === 3 &&
                                     <fieldset className="postcode active">
                                         <div className="row">
                                             <div className="col-lg-4 d-flex align-items-center">
@@ -235,21 +233,19 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                                 Previous</button>
                                                             <button className=" primary-btn1" type="submit">Submit</button>
                                                         </div> */}
-                                                         <StepButton currentStep={currentStep}  setCurrentStep={setCurrentStep} />
+                                                        <StepButton currentStep={currentStep} setCurrentStep={setCurrentStep} />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </fieldset>
-                                    }
-                                </form>
-                            </div>
+                                }
+                            </form>
                         </div>
                     </div>
                 </div>
-
-            </Modal>
-        </div>
+            </div>
+        </Modal>
     )
 }
 
