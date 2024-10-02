@@ -47,7 +47,7 @@ const AttractionDetails = () => {
                                     <div className="col-lg-6">
                                         <div className="gallery-img-wrap">
                                             <Image src={iAttraction1} alt="" />
-                                            <a data-fancybox="gallery-01" href={iAttraction1}><i
+                                            <a data-fancybox="gallery-01" href="/assets/image/attraction-01.png"><i
                                                 className="bi bi-eye"></i></a>
                                         </div>
                                     </div>
@@ -56,14 +56,14 @@ const AttractionDetails = () => {
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap">
                                                     <Image src={iAttraction2} alt="" />
-                                                    <a data-fancybox="gallery-01" href="assets/image/attraction-02.png"><i
+                                                    <a data-fancybox="gallery-01" href="/assets/image/attraction-02.png"><i
                                                         className="bi bi-eye"></i></a>
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="gallery-img-wrap">
                                                     <Image src={iAttraction3} alt="" />
-                                                    <a data-fancybox="gallery-01" href="assets/image/attraction-03.png"><i
+                                                    <a data-fancybox="gallery-01" href="/assets/image/attraction-03.png"><i
                                                         className="bi bi-eye"></i></a>
                                                 </div>
                                             </div>
@@ -88,11 +88,11 @@ const AttractionDetails = () => {
                         </div>
                     </div>
                     <div className="others-image-wrap d-none">
-                        <a href="../..//image/attraction-01.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
-                        <a href="assets/image/attraction-02.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
-                        <a href="assets/image/attraction-03.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
-                        <a href="assets/image/attraction-04.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
-                        <a href="assets/image/attraction-05.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-01.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-02.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-03.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-04.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="/assets/image/attraction-05.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
                     </div>
                     <div className="row g-xl-4 gy-5">
                         <div className="col-xl-8">
