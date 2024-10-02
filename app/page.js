@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { iCountryImage, iCountryImage2, iCountryImage3, iCountryImage4, iCountryImage5, iCountryImage6, iCountryImage7, iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4, iFlag, iFlag2, iFlag3, iFlag4, iFlag5, iFlag6, iFlag7, iFlag8, iLogo, iVisaSection } from "@/util/imageImports";
 import OfferBannerSlider from "./components/OfferBannerSlider";
 import ClientSpeak from "./components/clientSpeak/ClientSpeak";
-import ProvideVisa from "./components/Providevisa";
+import ProvideVisa from "./components/providevisa/Providevisa";
 import Link from "next/link";
 import Service from "./components/service/Service";
 import VisaAccordion from "./components/VisaAccordion";
