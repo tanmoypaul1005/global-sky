@@ -96,7 +96,7 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                         <div className="col-md-12 mb-35">
                                                             <div className="form-inner">
                                                                 <label>Type of Visa</label>
-                                                                <select>
+                                                                <select className=''>
                                                                     <option>Select visa Type</option>
                                                                     <option>Select visa Type</option>
                                                                     <option>Select visa Type</option>
