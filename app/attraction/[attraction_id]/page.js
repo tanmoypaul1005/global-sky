@@ -13,9 +13,11 @@ import '@fancyapps/ui/dist/fancybox/fancybox.css';
 const AttractionDetails = () => {
 
     useEffect(() => {
-        Fancybox.bind("[data-fancybox]", {
-            // Custom options
-        });
+        if (Fancybox) {
+            Fancybox.bind("[data-fancybox]", {
+                // Custom options
+            });
+        }
     }, []);
 
     return (
@@ -45,11 +47,8 @@ const AttractionDetails = () => {
                                     <div className="col-lg-6">
                                         <div className="gallery-img-wrap">
                                             <Image src={iAttraction1} alt="" />
-                                            <a data-fancybox="gallery-01" href="/image/attraction-01.png"><i
+                                            <a data-fancybox="gallery-01" href={iAttraction1}><i
                                                 className="bi bi-eye"></i></a>
-                                            {/* <a data-fancybox="gallery-01" href="../../image/attraction-01.png">
-                                                <i className="bi bi-eye"></i>
-                                            </a> */}
                                         </div>
                                     </div>
                                     <div className="col-lg-6 h-100">
@@ -89,7 +88,7 @@ const AttractionDetails = () => {
                         </div>
                     </div>
                     <div className="others-image-wrap d-none">
-                        <a href="assets/image/attraction-01.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
+                        <a href="../..//image/attraction-01.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
                         <a href="assets/image/attraction-02.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
                         <a href="assets/image/attraction-03.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
                         <a href="assets/image/attraction-04.png" data-fancybox="images"><Image src={iAttraction1} alt="" /></a>
