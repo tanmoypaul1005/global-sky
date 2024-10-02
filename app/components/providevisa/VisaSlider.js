@@ -43,6 +43,7 @@ export default function VisaSlider() {
                         spaceBetween: 30
                     }
                 }}
+                loop={true}
                 modules={[Autoplay]}
                 className="mySwiper"
             >
