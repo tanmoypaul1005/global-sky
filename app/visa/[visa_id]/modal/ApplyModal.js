@@ -3,6 +3,8 @@
 import React, { useState } from 'react'
 import { Modal } from 'react-bootstrap';
 import StepButton from '../components/StepButton';
+import { iFile } from '@/util/imageImports';
+import Image from 'next/image';
 
 const ApplyModal = ({ show, setShowModal }) => {
 
@@ -22,9 +24,9 @@ const ApplyModal = ({ show, setShowModal }) => {
                                 className="bi bi-x-circle"></i></button>
                             <div className="modal-header">
                                 <ul className="visa-form-step" id="progressbar">
-                                    <li>Step 1: Travel Date</li>
-                                    <li>Step 2: Visa Type</li>
-                                    <li>Step 3: Personal Info</li>
+                                    <li className={`${currentStep === 1 && "processing"}`}>Step 1: Travel Date</li>
+                                    <li className={`${currentStep === 2 && "processing"}`}>Step 2: Visa Type</li>
+                                    <li className={`${currentStep === 3 && "processing"}`}>Step 3: Personal Info</li>
                                 </ul>
                             </div>
 
@@ -162,7 +164,7 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                             <div className="image-drop-area mb-25">
                                                                 <div className="dropzone dropzone-1 text-center dz-clickable">
                                                                     <div className="icon">
-                                                                        <img src="assets/image/icon/file.svg" alt="" />
+                                                                        <Image src={iFile} alt="" />
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -171,7 +173,7 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                             <div className="image-drop-area mb-25">
                                                                 <div className="dropzone dropzone-2 text-center dz-clickable">
                                                                     <div className="icon">
-                                                                        <img src="assets/image/icon/file.svg" alt="" />
+                                                                        <Image src={iFile} alt="" />
                                                                     </div>
                                                                 </div>
                                                             </div>
