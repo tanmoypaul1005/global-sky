@@ -1,19 +1,28 @@
 "use client"
+import React, { useEffect } from 'react'
 import CommonHeader from '@/app/components/header/CommonHeader'
 import { iAttraction1, iAttraction2, iAttraction3, iAttraction4, iAttraction5 } from '@/util/imageImports'
 import Image from 'next/image'
-import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JavaScript
+import { Fancybox } from '@fancyapps/ui';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
 
 const AttractionDetails = () => {
+
+    useEffect(() => {
+        Fancybox.bind("[data-fancybox]", {
+            // Custom options
+        });
+    }, []);
+
     return (
         <body className="backgraound-color">
-            
+
             <CommonHeader />
-            
+
             {/* <!-- Banner section strats here --> */}
             <div className="about-breadcrum-section mb-120">
                 <div className="container">
@@ -36,8 +45,11 @@ const AttractionDetails = () => {
                                     <div className="col-lg-6">
                                         <div className="gallery-img-wrap">
                                             <Image src={iAttraction1} alt="" />
-                                            <a data-fancybox="gallery-01" href="assets/image/attraction-01.png"><i
+                                            <a data-fancybox="gallery-01" href="/image/attraction-01.png"><i
                                                 className="bi bi-eye"></i></a>
+                                            {/* <a data-fancybox="gallery-01" href="../../image/attraction-01.png">
+                                                <i className="bi bi-eye"></i>
+                                            </a> */}
                                         </div>
                                     </div>
                                     <div className="col-lg-6 h-100">
@@ -141,8 +153,8 @@ const AttractionDetails = () => {
                                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#tourPlan">
                                         <div className="accordion-body">
                                             <ul style={{
-                                    marginLeft: "-30px"
-                                }}>
+                                                marginLeft: "-30px"
+                                            }}>
                                                 <li><i className="bi bi-check-lg"></i> Passport or Emirates ID is mandatory to be carried.</li>
                                                 <li><i className="bi bi-check-lg"></i> <strong>Weight criteria :</strong> Guests weighing from 30 to 150 kgs will be allowed for the glass slide</li>
                                                 <li><i className="bi bi-check-lg"></i> <strong>Height criteria :</strong> Guests with height ranging from 120 cm to 200 cm will be allowed for the glass slide</li>
@@ -200,8 +212,8 @@ const AttractionDetails = () => {
                                         <h2>9.5</h2>
                                         <div className="review-wrap">
                                             <ul style={{
-                                    marginLeft: "-30px"
-                                }} className="star-list">
+                                                marginLeft: "-30px"
+                                            }} className="star-list">
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
                                                 <li><i className="bi bi-star-fill"></i></li>
@@ -263,7 +275,7 @@ const AttractionDetails = () => {
                                                                                         <span>Overall</span>
                                                                                     </li>
                                                                                     <li>
-                                                                                        <div  className="rating-container"
+                                                                                        <div className="rating-container"
                                                                                             data-rating="0">
                                                                                             <i
                                                                                                 className="bi bi-star-fill star-icon"></i>
@@ -379,7 +391,7 @@ const AttractionDetails = () => {
                                                             <span>Transport</span>
                                                             <ul style={{
                                                                 marginLeft: "-30px"
-                                                            }}className="star-list">
+                                                            }} className="star-list">
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>
                                                                 <li><i className="bi bi-star-fill"></i></li>

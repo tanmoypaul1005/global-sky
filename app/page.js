@@ -114,6 +114,7 @@ export default function Home() {
             <VisaAccordion />
 
             <Footer />
+            
         </body>
     );
 }
