@@ -1,14 +1,11 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css"
-import { iDestinationImage, iDestinationImage2, iDestinationImage3, iDestinationImage4 } from "@/util/imageImports";
 import OfferBannerSlider from "./components/OfferBannerSlider";
 import ClientSpeak from "./components/clientSpeak/ClientSpeak";
 import ProvideVisa from "./components/providevisa/Providevisa";
-import Link from "next/link";
 import Service from "./components/service/Service";
-import VisaAccordion from "./components/VisaAccordion";
+import VisaAccordion from "./components/homePage/VisaAccordion";
 import Footer from './components/Footer';
 import HomePageHeader from './components/homePage/HomePageHeader';
 import VisaBanner from './components/homePage/VisaBanner';
