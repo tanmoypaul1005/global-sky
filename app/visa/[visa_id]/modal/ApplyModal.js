@@ -2,6 +2,7 @@
 "use client"
 import React, { useState } from 'react'
 import { Modal } from 'react-bootstrap';
+import StepButton from '../components/StepButton';
 
 const ApplyModal = ({ show, setShowModal }) => {
 
@@ -29,7 +30,9 @@ const ApplyModal = ({ show, setShowModal }) => {
 
                             <div className="modal-body">
                                 <form id="msform" className="visa-form">
-                                    {currentStep === 1 && <fieldset className="postcode active">
+                                    {
+                                    currentStep === 1 && 
+                                    <fieldset className="postcode active">
                                         <div className="row">
                                             <div className="col-lg-4 d-flex align-items-center">
                                                 <div className="step-title">
@@ -53,16 +56,20 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div
+                                                    {/* <div
                                                         className="next-prev-btn d-flex align-items-center justify-content-end flex-wrap gap-3">
-                                                        <button className="next primary-btn1">Next <i className="bi bi-arrow-right"></i>
+                                                        <button onClick={()=>{setCurrentStep(2)}} className="next primary-btn1">Next <i className="bi bi-arrow-right"></i>
                                                         </button>
-                                                    </div>
+                                                    </div> */}
+                                                    <StepButton currentStep={currentStep}  setCurrentStep={setCurrentStep} />
                                                 </div>
                                             </div>
                                         </div>
-                                    </fieldset>}
-                                    {currentStep === 2 && <fieldset className="postcode">
+                                    </fieldset>
+                                    }
+                                    {
+                                    currentStep === 2 && 
+                                    <fieldset className="postcode active">
                                         <div className="row">
                                             <div className="col-lg-4 d-flex align-items-center">
                                                 <div className="step-title">
@@ -102,18 +109,22 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div
+                                                    {/* <div
                                                         className="next-prev-btn d-flex align-items-center justify-content-end flex-wrap gap-4">
                                                         <button className="prev primary-btn1"> <i className="bi bi-arrow-left"></i>
                                                             Previous</button>
-                                                        <button className="next primary-btn1">Next <i className="bi bi-arrow-right"></i>
+                                                        <button onClick={()=>{setCurrentStep(3)}} className="next primary-btn1">Next <i className="bi bi-arrow-right"></i>
                                                         </button>
-                                                    </div>
+                                                    </div> */}
+                                                     <StepButton currentStep={currentStep}  setCurrentStep={setCurrentStep} />
                                                 </div>
                                             </div>
                                         </div>
-                                    </fieldset>}
-                                    {currentStep === 3 && <fieldset className="postcode">
+                                    </fieldset>
+                                    }
+                                    {
+                                    currentStep === 3 && 
+                                    <fieldset className="postcode active">
                                         <div className="row">
                                             <div className="col-lg-4 d-flex align-items-center">
                                                 <div className="step-title">
@@ -216,17 +227,19 @@ const ApplyModal = ({ show, setShowModal }) => {
                                                                     and announcements.)</p>
                                                             </div>
                                                         </div>
-                                                        <div
+                                                        {/* <div
                                                             className="next-prev-btn d-flex align-items-center justify-content-end flex-wrap gap-4">
                                                             <button className="prev primary-btn1"> <i className="bi bi-arrow-left"></i>
                                                                 Previous</button>
                                                             <button className=" primary-btn1" type="submit">Submit</button>
-                                                        </div>
+                                                        </div> */}
+                                                         <StepButton currentStep={currentStep}  setCurrentStep={setCurrentStep} />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </fieldset>}
+                                    </fieldset>
+                                    }
                                 </form>
                             </div>
                         </div>
