@@ -6,7 +6,13 @@ import Image from 'next/image'
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JavaScript
-import { Fancybox } from '@fancyapps/ui';
+// import { Fancybox } from '@fancyapps/ui';
+// import '@fancyapps/ui/dist/fancybox/fancybox.css';
+
+
+// Dynamic import for Fancybox
+import dynamic from 'next/dynamic';
+const Fancybox = dynamic(() => import('@fancyapps/ui'), { ssr: false });
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
 
@@ -27,6 +33,7 @@ const AttractionDetails = () => {
                 ],
             });
         }
+        window.scrollTo(0, 0); // Scroll to the top of the page
     }, []);
     
     
