@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,9 +13,9 @@ import { iProvideVisa, iProvideVisa2, iProvideVisa3, iProvideVisa4, iProvideVisa
 
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
-export default function Demo() {
+export default function VisaSlider() {
     return (
         <>
             <Swiper
@@ -43,6 +43,7 @@ export default function Demo() {
                         spaceBetween: 30
                     }
                 }}
+                loop={true}
                 modules={[Autoplay]}
                 className="mySwiper"
             >

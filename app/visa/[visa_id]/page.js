@@ -3,7 +3,6 @@ import React, { useState ,useEffect} from 'react'
 import CommonHeader from '@/app/components/header/CommonHeader'
 import { iAlart, iFlagImage, iVisaScreenshot } from '@/util/imageImports'
 import Image from 'next/image'
-import CommonModal from '@/app/components/modal/CommonModal'
 import Footer from '@/app/components/Footer'
 import ApplyModal from './modal/ApplyModal'
 

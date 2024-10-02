@@ -4364,6 +4364,22 @@ header.about-us .nav-right .mobile-menu-btn {
   padding: 10px 25px;
   height: 48px;
 }
+
+.from-wrapper .form-inner select {
+  font-family: var(--font-inter);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.73px;
+  text-align: left;
+  color: rgba(28, 26, 30, 0.6);
+  width: 100%;
+  border: 1px solid #EDEDED;
+  padding: 10px 25px;
+  height: 48px;
+  outline: none;
+  background-color: transparent;
+}
+
 .from-wrapper .form-inner textarea {
   font-family: var(--font-inter);
   font-size: 13px;

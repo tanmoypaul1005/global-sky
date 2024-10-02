@@ -21,6 +21,7 @@ const ClientSpeakSlider = () => {
                     delay: 2500,
                     disableOnInteraction: false,
                 }}
+                loop={true}
                 breakpoints={{
                     // when window width is >= 320px
                     320: {
