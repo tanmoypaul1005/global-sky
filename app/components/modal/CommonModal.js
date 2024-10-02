@@ -4,14 +4,14 @@ import { Modal, Button } from 'react-bootstrap';
 
 const CommonModal = ({ show, handleClose, title, children }) => {
   return (
+    <div>
     <Modal  size="lg" show={true} dialogClassName="" onHide={handleClose}>
-      {/* <Modal.Body>
-        <div> */}
+      <div className="modal-content">
         {children}
-        {/* </div>
-      </Modal.Body> */}
+      </div>
 
     </Modal>
+    </div>
   );
 };
 

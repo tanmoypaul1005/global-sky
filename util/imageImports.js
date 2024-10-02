@@ -85,4 +85,6 @@ export { default as iVisaScreenshot} from "@/app/image/document-img.png";
 export { default as iAlart} from "@/app/image/alart.svg";
 
 
+
+export { default as iFile} from "@/app/image/icon/file.svg";
                                                                                                    
