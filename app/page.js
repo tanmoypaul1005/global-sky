@@ -105,8 +105,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* <!-- Offer section ends here --> */}
-
 
             <CountrySection />
 
