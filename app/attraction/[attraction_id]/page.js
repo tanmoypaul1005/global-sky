@@ -775,7 +775,7 @@ const AttractionDetails = () => {
                                         aria-labelledby="v-pills-contact-tab">
                                         <div className="sidebar-booking-form">
                                             <form>
-                                                <div className="form-inner mb-20">
+                                                <div style={{marginTop:"30px"}} className="form-inner mb-20">
                                                     <label>Full Name <span>*</span></label>
                                                     <input type="text" placeholder="Enter your full name" />
                                                 </div>
